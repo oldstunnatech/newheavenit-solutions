@@ -16,35 +16,10 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://newheavenit.com',
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://newheavenit-solutions.vercel.app',
     name: 'NewHeaven IT Solutions',
     description: 'Fullstack development, data analysis, and AI-powered solutions that transform your business.',
     defaultLocale: 'en',
-  },
-
-  ogImage: {
-    enabled: true,
-  },
-
-  sitemap: {
-    strictNuxtContentPaths: true,
-  },
-
-  robots: {
-    disallow: [],
-  },
-
-  schemaOrg: {
-    identity: {
-      type: 'Organization',
-      name: 'NewHeaven IT Solutions',
-      url: process.env.NUXT_PUBLIC_SITE_URL || 'https://newheavenit.com',
-      logo: '/logo.png',
-      sameAs: [
-        'https://github.com/your-github',
-        'https://linkedin.com/in/your-linkedin',
-      ],
-    },
   },
 
   vite: {
