@@ -23,8 +23,7 @@ watch(() => route.path, () => {
 
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center gap-2" @click="mobileOpen = false">
-        <span class="text-xl font-bold" style="color: #0369a1;">NewHeaven</span>
-        <span class="text-xl font-light text-slate-500">IT Solutions</span>
+        <img src="/IMG_8334.PNG" alt="NewHeaven IT Solutions" class="h-10 w-auto object-contain">
       </NuxtLink>
 
       <!-- Desktop links -->
