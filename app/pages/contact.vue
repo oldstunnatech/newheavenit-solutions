@@ -232,7 +232,7 @@ const services = [
 const budgets = ['< $500', '$500–$2k', '$2k–$5k', '$5k–$10k', '$10k+']
 
 const contactInfo = [
-  { icon: 'ph:envelope-fill', label: 'Email', value: 'support@newheavenit-solutions.com' },
+  { icon: 'ph:envelope-fill', label: 'Email', value: 'newheavenit-solutions@outlook.com' },
   { icon: 'ph:map-pin-fill', label: 'Location', value: 'Available Worldwide (Remote)' },
   { icon: 'ph:clock-fill', label: 'Working Hours', value: 'Mon–Fri, 9am–6pm WAT' },
 ]
@@ -268,15 +268,22 @@ const handleSubmit = async () => {
   submitError.value = ''
   try {
     const { error } = await supabase.from('leads').insert({
-      name: form.name,
-      email: form.email,
-      company: form.company || null,
-      service: form.service || null,
-      budget: form.budget || null,
-      message: form.message,
-    })
-    if (error) throw error
-    submitted.value = true
+  name: form.name,
+  email: form.email,
+  company: form.company || null,
+  service: form.service || null,
+  budget: form.budget || null,
+  message: form.message,
+})
+if (error) throw error
+
+// Send email notification
+await $fetch('/api/contact', {
+  method: 'POST',
+  body: { ...form },
+})
+
+submitted.value = true
     Object.assign(form, { name: '', email: '', company: '', service: '', budget: '', message: '' })
   } catch (err: any) {
     submitError.value = 'Something went wrong. Please try again or email us directly.'
