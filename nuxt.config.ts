@@ -15,17 +15,25 @@ export default defineNuxtConfig({
     redirect: false,
   },
 
-  site: {
-    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://newheavenit-solutions.vercel.app',
-    name: 'NewHeaven IT Solutions',
-    description: 'Fullstack development, data analysis, and AI-powered solutions that transform your business.',
-    defaultLocale: 'en',
+  app: {
+    head: {
+      title: 'NewHeaven IT Solutions',
+      meta: [
+        { name: 'description', content: 'Fullstack development, data analysis, and AI-powered solutions that transform your business.' },
+        { property: 'og:title', content: 'NewHeaven IT Solutions' },
+        { property: 'og:description', content: 'Fullstack development, data analysis, and AI solutions.' },
+        { property: 'og:type', content: 'website' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
   },
 
   vite: {
     optimizeDeps: {
       include: [
-        '@unhead/schema-org/vue',
         '@vue/devtools-core',
         '@vue/devtools-kit',
       ]
@@ -38,7 +46,6 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/fonts',
     '@nuxt/content',
-    '@nuxtjs/seo',
     '@nuxtjs/supabase',
   ]
 })

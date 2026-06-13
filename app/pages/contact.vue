@@ -58,9 +58,7 @@
             <div>
               <p class="text-sky-700 font-semibold mb-4">Follow Us</p>
               <div class="flex gap-3">
-                <a v-for="social in socials" :key="social.name" href="#" class="social-btn">
-                  <Icon :name="social.icon" />
-                </a>
+                <a v-for="social in socials" :key="social.name" :href="social.url" target="_blank" rel="noopener noreferrer" class="social-btn"><Icon :name="social.icon" /></a>
               </div>
             </div>
           </div>
@@ -73,7 +71,7 @@
                 <div class="success-icon-wrap">
                   <Icon name="ph:check-circle-fill" class="text-green-500" style="font-size:4rem" />
                 </div>
-                <h3 class="success-title">Message Sent! 🎉</h3>
+                <h3 class="success-title">Message Sent!</h3>
                 <p class="success-sub">
                   Thank you for reaching out. I'll review your message and get back to you
                   within 24 hours.
@@ -95,7 +93,7 @@
                       <label class="field-label">
                         <Icon name="ph:user-fill" class="mr-1" /> Full Name *
                       </label>
-                      <input v-model="form.name" type="text" placeholder="Pelumi Joshua"
+                      <input v-model="form.name" type="text" placeholder="Enter full name"
                         class="field-input" :class="errors.name ? 'border-red-400' : ''" />
                       <span v-if="errors.name" class="field-error">{{ errors.name }}</span>
                     </div>
@@ -234,15 +232,15 @@ const services = [
 const budgets = ['< $500', '$500–$2k', '$2k–$5k', '$5k–$10k', '$10k+']
 
 const contactInfo = [
-  { icon: 'ph:envelope-fill', label: 'Email', value: 'hello@newheavenIT.com' },
+  { icon: 'ph:envelope-fill', label: 'Email', value: 'support@newheavenit-solutions.com' },
   { icon: 'ph:map-pin-fill', label: 'Location', value: 'Available Worldwide (Remote)' },
   { icon: 'ph:clock-fill', label: 'Working Hours', value: 'Mon–Fri, 9am–6pm WAT' },
 ]
 
 const socials = [
-  { name: 'GitHub', icon: 'ph:github-logo-fill' },
-  { name: 'LinkedIn', icon: 'ph:linkedin-logo-fill' },
-  { name: 'Twitter', icon: 'ph:twitter-logo-fill' },
+  { name: 'GitHub', icon: 'ph:github-logo-fill', url: 'https://github.com/oldstunnatech' },
+  { name: 'LinkedIn', icon: 'ph:linkedin-logo-fill', url: 'https://www.linkedin.com/in/newheaven-it-solutions-a6b1b2309' },
+  { name: 'Twitter', icon: 'ph:x-logo-fill', url: 'https://x.com/NewHeavenIT' },
 ]
 
 const faqs = reactive([
