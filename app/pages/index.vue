@@ -75,8 +75,8 @@
         </div>
 
         <h1 class="hero-title animate-fade-in-up">
-          <span class="block hero-line-1 mb-3">Where Innovation</span>
-          <span class="block gradient-text">Meets the Heavens</span>
+          <span class="block hero-line-1 mb-3">Elevating Business</span>
+          <span class="block gradient-text">Beyond the Horizon</span>
         </h1>
 
         <p class="hero-sub animate-fade-in-up-delay">
@@ -118,8 +118,8 @@
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-20">
           <span class="section-tag">What We Offer</span>
-          <h2 class="section-title">Heavenly Solutions <br/>for Earthly Problems</h2>
-          <p class="section-sub">We blend cutting-edge technology with creative thinking to deliver results that matter.</p>
+          <h2 class="section-title">Big Vision<br/>Real-World Impact</h2>
+          <p class="section-sub">We blend cutting-edge technology with creative thinking to deliver results that drive better business decisions.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div v-for="(service, i) in services" :key="service.title"
@@ -149,11 +149,11 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <span class="section-tag">Why NewHeaven</span>
-            <h2 class="section-title text-left">Built Different. <br/>Delivered Better.</h2>
+            <h2 class="section-title text-left">Built Different.<br/>Delivered Better.</h2>
             <p class="section-sub text-left mb-10">
-              We don't just write code — we architect solutions. Every project at NewHeaven IT
-              is treated as a mission to elevate your business to new heights.
+              We don't just write code — we architect solutions. Every project at NewHeaven IT is treated as a mission to elevate your business to new heights.
             </p>
+
             <div class="space-y-6">
               <div v-for="reason in reasons" :key="reason.title" class="reason-card">
                 <div class="reason-icon-wrap">
@@ -187,6 +187,32 @@
         </div>
       </div>
     </section>
+    <!-- MISSION & VISION SECTION -->
+<section class="relative py-32 px-6 mv-bg overflow-hidden">
+  <div class="mv-orb mv-orb-1" />
+  <div class="mv-orb mv-orb-2" />
+  <div class="relative z-10 max-w-7xl mx-auto">
+    <div class="text-center mb-20">
+      <span class="section-tag">Our Purpose</span>
+      <h2 class="section-title">Built on Belief,<br/>Driven by Vision</h2>
+      <p class="section-sub">Two ideas guide every line of code and every dataset we touch.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="mv-card">
+        <div class="mv-icon-wrap"><Icon name="ph:compass-fill" class="mv-icon-el" /></div>
+        <span class="mv-label">Mission</span>
+        <p class="mv-text">To give startups and growing businesses access to world-class software and data expertise — without the overhead of hiring a full team.</p>
+        <p class="mv-text">New Heaven IT Solutions exists because most companies have to choose: hire a developer or a data person, build fast or build smart. We remove that trade-off. Every product we build comes with the data intelligence baked in from day one — not bolted on after the fact.</p>
+      </div>
+      <div class="mv-card">
+        <div class="mv-icon-wrap"><Icon name="ph:telescope-fill" class="mv-icon-el" /></div>
+        <span class="mv-label">Vision</span>
+        <p class="mv-text">A future where every startup, regardless of size or budget, has access to the same technical caliber as a Silicon Valley engineering team.</p>
+        <p class="mv-text">We believe the gap between "great idea" and "great product" shouldn't be closed by who can afford the biggest team — it should be closed by who has access to the right expertise. New Heaven IT Solutions is built to be that access point: one partner who can take an idea from a sketch on a napkin to a live, data-informed product.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- TECH STACK -->
     <section class="py-24 px-6 tech-bg">
@@ -234,8 +260,8 @@
 <script setup lang="ts">
 const stats = [
   { icon: 'ph:rocket-launch-fill', value: '50+', label: 'Projects Delivered' },
-  { icon: 'ph:clock-countdown-fill', value: '3+', label: 'Years Experience' },
-  { icon: 'ph:smiley-fill', value: '20+', label: 'Happy Clients' },
+  { icon: 'ph:clock-countdown-fill', value: '2+', label: 'Years Experience' },
+  { icon: 'ph:smiley-fill', value: '2+', label: 'Happy Clients' },
   { icon: 'ph:star-fill', value: '100%', label: 'Satisfaction Rate' },
 ]
 
@@ -244,19 +270,19 @@ const services = [
     icon: 'ph:globe-hemisphere-west-fill',
     title: 'Fullstack Development',
     description: 'Modern, scalable web applications built with the latest technologies.',
-    features: ['Vue / Nuxt / React', 'Node.js & REST APIs', 'Cloud Deployment'],
+    features: ['Vue / Nuxt / React', 'Node.js, Django & REST APIs', 'Cloud Deployment'],
   },
   {
     icon: 'ph:chart-bar-fill',
     title: 'Data Analysis',
     description: 'Transform raw data into powerful business insights and decisions.',
-    features: ['Interactive Dashboards', 'KPI Reporting', 'Data Visualization'],
+    features: ['Interactive Dashboards', 'KPI Reporting', 'Data Visualization', 'Data Mining', ' Script Automation'],
   },
   {
     icon: 'ph:brain-fill',
     title: 'Data Science & AI',
     description: 'Machine learning and AI solutions that give your business a competitive edge.',
-    features: ['ML Model Development', 'Predictive Analytics', 'NLP & Automation'],
+    features: ['ML Model Development', 'Predictive Analytics', 'NLP & Automation', 'Artificial Intelligence'],
   },
 ]
 
@@ -270,11 +296,14 @@ const techs = [
   { icon: 'logos:vue', name: 'Vue.js' },
   { icon: 'logos:nuxt-icon', name: 'Nuxt' },
   { icon: 'logos:typescript-icon', name: 'TypeScript' },
-  { icon: 'logos:python', name: 'Python' },
   { icon: 'logos:nodejs-icon', name: 'Node.js' },
+  { icon: 'logos:python', name: 'Python' },
   { icon: 'logos:postgresql', name: 'PostgreSQL' },
   { icon: 'logos:supabase-icon', name: 'Supabase' },
-  { icon: 'logos:tensorflow', name: 'TensorFlow' },
+  { icon: 'logos:mysql', name: 'MySQL' },
+  { icon: 'logos:scikit-learn', name: 'Scikit-Learn' },
+  { icon: 'logos:matplotlib', name: 'MatPlot Lib' },
+  { icon: 'logos:powerbi', name: 'PowerBi' },
   { icon: 'logos:aws', name: 'AWS' },
   { icon: 'logos:firebase', name: 'Firebase' },
   { icon: 'logos:tailwindcss-icon', name: 'Tailwind' },
@@ -458,7 +487,7 @@ useSeoMeta({
 
 /* ── SECTION LABELS ── */
 .section-tag { display: inline-block; background: rgba(14,165,233,0.15); color: #7dd3fc; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.3); margin-bottom: 1rem; }
-.section-title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: white; line-height: 1.2; margin-bottom: 1rem; text-align: center; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+.section-title { font-size: clamp(3rem, 4vw, 2rem); font-weight: 800; color: white; line-height: 1.2; margin-bottom: 1rem; text-align: center; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
 .section-sub { color: rgba(255,255,255,0.7); font-size: 1.05rem; max-width: 560px; margin: 0 auto; line-height: 1.7; text-align: center; }
 
 /* ── SERVICE CARDS ── */
@@ -487,6 +516,19 @@ useSeoMeta({
 .side-card-1 { position: absolute; top: -20px; right: -20px; padding: 1rem 1.5rem; display: flex; align-items: center; animation: float 4s ease-in-out infinite 1s; }
 .side-card-2 { position: absolute; bottom: -20px; left: -20px; padding: 1rem 1.5rem; display: flex; align-items: center; animation: float 4s ease-in-out infinite 2s; }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+
+/* ── MISSION & VISION ── */
+.mv-bg { background: linear-gradient(180deg, #0a3a5c 0%, #0369a1 40%, #0c2340 100%); }
+.mv-orb { position: absolute; border-radius: 50%; filter: blur(70px); pointer-events: none; animation: orbPulse ease-in-out infinite; }
+.mv-orb-1 { width: 450px; height: 450px; top: -120px; right: -100px; background: radial-gradient(circle, rgba(99,102,241,0.25) 0%, transparent 70%); animation-duration: 10s; }
+.mv-orb-2 { width: 380px; height: 380px; bottom: -100px; left: -80px; background: radial-gradient(circle, rgba(56,189,248,0.2) 0%, transparent 70%); animation-duration: 12s; animation-delay: 2s; }
+.mv-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 1.5rem; padding: 2.5rem 2.25rem; backdrop-filter: blur(16px); box-shadow: 0 8px 32px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.15); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: fadeInUp 0.6s ease both; }
+.mv-card:hover { transform: translateY(-8px); box-shadow: 0 24px 50px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.2); border-color: rgba(125,211,252,0.4); background: rgba(255,255,255,0.1); }
+.mv-icon-wrap { width: 64px; height: 64px; background: linear-gradient(135deg, rgba(14,165,233,0.3), rgba(99,102,241,0.3)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 4px 20px rgba(14,165,233,0.2); }
+.mv-icon-el { font-size: 2rem; color: #7dd3fc; filter: drop-shadow(0 0 8px rgba(125,211,252,0.5)); }
+.mv-label { display: block; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7dd3fc; margin-bottom: 1rem; }
+.mv-text { color: rgba(255,255,255,0.8); font-size: 1rem; line-height: 1.8; margin-bottom: 1rem; }
+.mv-text:last-child { margin-bottom: 0; }
 
 /* ── TECH GRID ── */
 .tech-grid { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2.5rem; }

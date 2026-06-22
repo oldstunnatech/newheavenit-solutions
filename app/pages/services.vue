@@ -164,6 +164,7 @@ const mainServices = [
       'SQL & NoSQL query optimization',
       'Business intelligence consulting',
       'Excel / Google Sheets automation',
+      'Data Mining and Extraction',
     ],
     visualLabel: 'dashboard.py',
     visualLines: [

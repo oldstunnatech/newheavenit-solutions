@@ -15,8 +15,7 @@
           <span class="gradient-text">NewHeaven IT Solutions</span>
         </h1>
         <p class="page-sub animate-fade-in-up-delay">
-          A passionate fullstack developer, data analyst, and data scientist on a mission
-          to help businesses grow through technology — one solution at a time.
+          I build software and decode data — not because it's trendy, but because I genuinely believe the right tools can change how a business grows. Every project is personal to me.
         </p>
       </div>
     </section>
@@ -29,10 +28,10 @@
           <div class="relative flex justify-center">
             <div class="profile-card">
               <div class="profile-avatar">
-                <Icon name="ph:user-circle-fill" class="text-sky-400" style="font-size:8rem" />
-              </div>
-              <h3 class="profile-name">Pelumi Joshua</h3>
-              <p class="profile-role">Founder & Lead Engineer</p>
+                <img src="/IMG_6158.jpg" alt="Oguntola Pelumi Joshua" class="profile-img" />
+                </div>
+              <h3 class="profile-name">Oguntola Pelumi Joshua</h3>
+              <p class="profile-role">Founder & Data Scientist</p>
               <div class="profile-tags">
                 <span class="profile-tag">Fullstack Dev</span>
                 <span class="profile-tag">Data Analyst</span>
@@ -48,7 +47,7 @@
             <!-- Floating badges -->
             <div class="floating-badge badge-1">
               <Icon name="ph:trophy-fill" class="text-yellow-400" />
-              <span>3+ Years Experience</span>
+              <span>2+ Years Experience</span>
             </div>
             <div class="floating-badge badge-2">
               <Icon name="ph:star-fill" class="text-yellow-400" />
@@ -200,6 +199,7 @@ const skillGroups = [
     title: 'Data & Backend',
     skills: [
       { icon: 'logos:python', name: 'Python', level: 93 },
+      { icon: 'logos:django', name: 'Django', level: 93 },
       { icon: 'logos:postgresql', name: 'PostgreSQL', level: 87 },
       { icon: 'logos:supabase-icon', name: 'Supabase', level: 90 },
       { icon: 'logos:docker-icon', name: 'Docker', level: 80 },
@@ -209,7 +209,7 @@ const skillGroups = [
     icon: 'ph:brain-fill',
     title: 'AI & Data Science',
     skills: [
-      { icon: 'logos:tensorflow', name: 'TensorFlow', level: 85 },
+      { icon: 'logos:robot-fill', name: 'Scikit-Learn', level: 85 },
       { icon: 'ph:chart-bar-fill', name: 'Data Analysis', level: 92 },
       { icon: 'ph:robot-fill', name: 'Machine Learning', level: 88 },
       { icon: 'ph:graph-fill', name: 'Data Visualization', level: 90 },
@@ -226,9 +226,9 @@ const values = [
 
 const milestones = [
   { year: '2024', icon: 'ph:graduation-cap-fill', title: 'Started the Journey', desc: 'Began fullstack development and data science studies with a focus on real-world applications.' },
-  { year: '2025', icon: 'ph:briefcase-fill', title: 'First Clients', desc: 'Delivered 10+ successful projects for startups and small businesses across multiple industries.' },
+  { year: '2025', icon: 'ph:briefcase-fill', title: 'Graduated Tech School', desc: 'Delivered 10+ projects for portfolio building and real-world practice across multiple industries.' },
   { year: '2026', icon: 'ph:building-office-fill', title: 'NewHeaven Founded', desc: 'Officially launched NewHeaven IT Solutions to scale impact and serve more businesses.' },
-  { year: '2027', icon: 'ph:trophy-fill', title: 'Growing Strong', desc: '50+ projects delivered, expanding into AI/ML services and enterprise solutions.' },
+  { year: '2027', icon: 'ph:trophy-fill', title: 'Growing Strong', desc: '50+ projects aimed, expanding into AI/ML services and enterprise solutions.' },
 ]
 
 useSeoMeta({
@@ -281,7 +281,22 @@ useSeoMeta({
   animation: float 4s ease-in-out infinite; width: 100%; max-width: 320px;
 }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
-.profile-avatar { margin-bottom: 1rem; }
+.profile-avatar {
+  display: flex;
+  justify-content: center;
+}
+.profile-img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #38bdf8;
+  box-shadow: 0 8px 30px rgba(14,165,233,0.35);
+  transition: transform 0.3s;
+}
+.profile-img:hover {
+  transform: scale(1.04);
+}
 .profile-name { font-size: 1.5rem; font-weight: 800; color: #0c4a6e; }
 .profile-role { color: #0369a1; font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem; }
 .profile-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-bottom: 1.5rem; }
