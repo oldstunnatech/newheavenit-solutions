@@ -15,7 +15,7 @@
           <span class="gradient-text">NewHeaven IT Solutions</span>
         </h1>
         <p class="page-sub animate-fade-in-up-delay">
-          I build software and decode data — not because it's trendy, but because I genuinely believe the right tools can change how a business grows. Every project is personal to me.
+          I build software and decode data not because it's trendy, but because I genuinely believe the right tools can change how a business grows.
         </p>
       </div>
     </section>
@@ -56,29 +56,39 @@
           </div>
 
           <!-- Story text -->
-          <div>
-            <span class="section-tag">My Story</span>
-            <h2 class="section-title text-left">Built from Passion, <br/>Driven by Purpose</h2>
-            <div class="story-text space-y-4">
-              <p>
-                NewHeaven IT Solutions was born from a simple belief — that every business,
-                no matter the size, deserves access to world-class technology solutions.
-              </p>
-              <p>
-                With a background spanning fullstack web development, data analysis, and
-                data science, I founded NewHeaven to bridge the gap between complex
-                technology and real business outcomes.
-              </p>
-              <p>
-                Every project I take on is treated as a mission. I don't just write code —
-                I architect solutions that scale, perform, and deliver measurable results
-                for my clients.
-              </p>
-            </div>
-            <UButton to="/contact" color="primary" variant="solid" size="lg" class="mt-8">
-              <Icon name="ph:handshake-fill" class="mr-2" /> Let's Work Together
-            </UButton>
-          </div>
+<div>
+  <span class="section-tag1">My Story</span>
+  <h2 class="section-title text-left">Built from Passion, <br/>Driven by Purpose</h2>
+  <div class="story-text space-y-4">
+    <p>
+      NewHeaven IT Solutions was born from a simple belief that every business,
+      no matter the size, deserves access to world-class technology solutions.
+    </p>
+    <p>
+      My path here started with a background in Computer Science, where I first
+      discovered how powerful well-structured data could be. What began as a
+      curiosity about how things worked under the hood grew into a deeper pursuit
+      fullstack development, data analysis, and eventually machine learning and
+      data science.
+    </p>
+    <p>
+      The more I built, the more I noticed a gap: startups and growing businesses
+      were often forced to choose between a developer who could build their product
+      and a data specialist who could make sense of it rarely both. That gap is
+      what convinced me founders needed a single partner who understood the full
+      picture, not two disconnected hires.
+    </p>
+    <p>
+      NewHeaven IT Solutions is the answer to that realization. Every project I take
+      on is treated as a mission. I don't just write code, I architect solutions
+      that scale, perform, and deliver measurable results, backed by the same data
+      intelligence that shaped my own journey into this field.
+    </p>
+  </div>
+  <UButton to="/contact" color="primary" variant="solid" size="lg" class="mt-8">
+    <Icon name="ph:handshake-fill" class="mr-2" /> Let's Work Together
+  </UButton>
+</div>
         </div>
       </div>
     </section>
@@ -87,7 +97,7 @@
     <section class="py-24 px-6 skills-bg">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-16">
-          <span class="section-tag">Expertise</span>
+          <span class="section-tag2">Expertise</span>
           <h2 class="section-title">Skills & Technologies</h2>
           <p class="section-sub">A well-rounded tech stack covering the full spectrum of modern software development.</p>
         </div>
@@ -119,7 +129,7 @@
     <section class="py-24 px-6 section-light">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-16">
-          <span class="section-tag">Core Values</span>
+          <span class="section-tag3">Core Values</span>
           <h2 class="section-title">What Drives NewHeaven</h2>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -138,7 +148,7 @@
     <section class="py-24 px-6 milestones-bg">
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-16">
-          <span class="section-tag">Journey</span>
+          <span class="section-tag3">Journey</span>
           <h2 class="section-title">Milestones & Achievements</h2>
         </div>
         <div class="timeline">
@@ -260,11 +270,36 @@ useSeoMeta({
   display: inline-block; background: rgba(14,165,233,0.1); color: #0369a1;
   font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
   padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.2); margin-bottom: 1rem;
+  margin-left: 0px;
 }
+
+.section-tag1 {
+  display: inline-block; background: rgba(14,165,233,0.1); color: #0369a1;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.2); margin-bottom: 1rem;
+  margin-left: 230px;
+}
+
+
+
+.section-tag2 {
+  display: inline-block; background: rgba(14,165,233,0.1); color: #0369a1;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.2); margin-bottom: 1rem;
+  margin-left: 20px;
+}
+
+.section-tag3 {
+  display: inline-block; background: rgba(14,165,233,0.1); color: #0369a1;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.2); margin-bottom: 1rem;
+  margin-left: 10px;
+}
+
 .section-title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #0c4a6e; line-height: 1.2; margin-bottom: 1rem; text-align: center; }
 .section-sub { color: #64748b; font-size: 1.05rem; max-width: 560px; margin: 0 auto; line-height: 1.7; text-align: center; }
 
-.page-title { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; color: #0c4a6e; line-height: 1.1; margin: 1rem 0; letter-spacing: -0.02em; }
+.page-title { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; color: #0c4a6e; line-height: 1.1; margin: 1rem 0; letter-spacing: -0.02em; margin-left: 200; }
 .gradient-text {
   background: linear-gradient(90deg, #0c4a6e, #0369a1, #0ea5e9, #059669);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
@@ -398,4 +433,36 @@ useSeoMeta({
 .animate-fade-in-down { animation: fadeInDown 0.8s ease both; }
 .animate-fade-in-up { animation: fadeInUp 0.8s ease 0.2s both; }
 .animate-fade-in-up-delay { animation: fadeInUp 0.8s ease 0.4s both; }
+
+
+@media (max-width: 480px) {
+  .section-tag {
+  display: inline-block; background: rgba(14,165,233,0.1); color: #0369a1;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.2); margin-bottom: 1rem;
+  margin-left: 0px;
+}
+
+.section-tag1 {
+  display: inline-block; background: rgba(14,165,233,0.1); color: #0369a1;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.2); margin-bottom: 1rem;
+  margin-left: 110px;
+}
+
+.section-tag2 {
+  display: inline-block; background: rgba(14,165,233,0.1); color: #0369a1;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.2); margin-bottom: 1rem;
+  margin-left: 0px;
+}
+
+.section-tag3 {
+  display: inline-block; background: rgba(14,165,233,0.1); color: #0369a1;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.2); margin-bottom: 1rem;
+  margin-left: 10px;
+}
+}
+
 </style>

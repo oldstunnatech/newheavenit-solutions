@@ -80,7 +80,7 @@
         </h1>
 
         <p class="hero-sub animate-fade-in-up-delay">
-          NewHeaven IT Solutions delivers world-class fullstack development, data analysis,
+          NewHeaven IT Solutions delivers world-class fullstack development, data analysis, data science,
           and AI-powered solutions. We build digital experiences that elevate your business
           beyond the horizon.
         </p>
@@ -118,7 +118,7 @@
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-20">
           <span class="section-tag">What We Offer</span>
-          <h2 class="section-title">Big Vision<br/>Real-World Impact</h2>
+          <h2 class="section-title">Big Vision<br/>Real World Impact</h2>
           <p class="section-sub">We blend cutting-edge technology with creative thinking to deliver results that drive better business decisions.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -148,7 +148,7 @@
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
-            <span class="section-tag">Why NewHeaven</span>
+            <span class="section-tag1">Why NewHeaven</span>
             <h2 class="section-title text-left">Built Different.<br/>Delivered Better.</h2>
             <p class="section-sub text-left mb-10">
               We don't just write code — we architect solutions. Every project at NewHeaven IT is treated as a mission to elevate your business to new heights.
@@ -205,7 +205,7 @@
         <p class="mv-text">New Heaven IT Solutions exists because most companies have to choose: hire a developer or a data person, build fast or build smart. We remove that trade-off. Every product we build comes with the data intelligence baked in from day one — not bolted on after the fact.</p>
       </div>
       <div class="mv-card">
-        <div class="mv-icon-wrap"><Icon name="ph:telescope-fill" class="mv-icon-el" /></div>
+        <div class="mv-icon-wrap"><Icon name="ph:compass-fill" class="mv-icon-u" /></div>
         <span class="mv-label">Vision</span>
         <p class="mv-text">A future where every startup, regardless of size or budget, has access to the same technical caliber as a Silicon Valley engineering team.</p>
         <p class="mv-text">We believe the gap between "great idea" and "great product" shouldn't be closed by who can afford the biggest team — it should be closed by who has access to the right expertise. New Heaven IT Solutions is built to be that access point: one partner who can take an idea from a sketch on a napkin to a live, data-informed product.</p>
@@ -259,9 +259,9 @@
 
 <script setup lang="ts">
 const stats = [
-  { icon: 'ph:rocket-launch-fill', value: '50+', label: 'Projects Delivered' },
+  { icon: 'ph:rocket-launch-fill', value: '10+', label: 'Projects Delivered' },
   { icon: 'ph:clock-countdown-fill', value: '2+', label: 'Years Experience' },
-  { icon: 'ph:smiley-fill', value: '2+', label: 'Happy Clients' },
+  { icon: 'ph:smiley-fill', value: '10+', label: 'Happy Clients' },
   { icon: 'ph:star-fill', value: '100%', label: 'Satisfaction Rate' },
 ]
 
@@ -470,7 +470,7 @@ useSeoMeta({
 .stat-card:hover { transform: translateY(-8px) scale(1.03); box-shadow: 0 20px 50px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3); background: rgba(255,255,255,0.15); }
 .stat-icon-el { font-size: 1.75rem; color: #7dd3fc; margin-bottom: 0.5rem; display: block; filter: drop-shadow(0 0 8px rgba(125,211,252,0.6)); }
 .stat-value { font-size: 2rem; font-weight: 800; color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.2); }
-.stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.7); margin-top: 0.25rem; }
+.stat-label { font-size: 0.8rem; color: black; margin-top: 0.25rem; }
 
 /* ── SCROLL MOUSE ── */
 .scroll-indicator { animation: bounce 2s ease infinite; }
@@ -487,6 +487,7 @@ useSeoMeta({
 
 /* ── SECTION LABELS ── */
 .section-tag { display: inline-block; background: rgba(14,165,233,0.15); color: #7dd3fc; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.3); margin-bottom: 1rem; }
+.section-tag1 { display: inline-block; background: rgba(14,165,233,0.15); color: #7dd3fc; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.3); margin-bottom: 1rem; margin-left: 200px; }
 .section-title { font-size: clamp(3rem, 4vw, 2rem); font-weight: 800; color: white; line-height: 1.2; margin-bottom: 1rem; text-align: center; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
 .section-sub { color: rgba(255,255,255,0.7); font-size: 1.05rem; max-width: 560px; margin: 0 auto; line-height: 1.7; text-align: center; }
 
@@ -555,4 +556,9 @@ useSeoMeta({
 .animate-fade-in-up-delay { animation: fadeInUp 0.8s ease 0.4s both; }
 .animate-fade-in-up-delay2 { animation: fadeInUp 0.8s ease 0.6s both; }
 .animate-fade-in-up-delay3 { animation: fadeInUp 0.8s ease 0.8s both; }
+
+
+@media (max-width: 480px) {
+  .section-tag1 { display: inline-block; background: rgba(14,165,233,0.15); color: #7dd3fc; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.3); margin-bottom: 1rem; margin-left: 80px; }
+}
 </style>
