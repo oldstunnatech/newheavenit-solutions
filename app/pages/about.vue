@@ -28,7 +28,7 @@
           <div class="relative flex justify-center">
             <div class="profile-card">
               <div class="profile-avatar">
-                <img src="/IMG_6158.jpg" alt="Oguntola Pelumi Joshua" class="profile-img" />
+                <img src="/IMG_6158.JPG" alt="Oguntola Pelumi Joshua" class="profile-img" />
                 </div>
               <h3 class="profile-name">Oguntola Pelumi Joshua</h3>
               <p class="profile-role">Founder & Data Scientist</p>
