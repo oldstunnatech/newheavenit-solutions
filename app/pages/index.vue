@@ -247,9 +247,9 @@
           <UButton to="/contact" size="xl" variant="solid" color="neutral" class="cta-btn-white">
             <Icon name="ph:handshake-fill" class="mr-2" /> Get a Free Consultation
           </UButton>
-          <UButton to="/pricing" size="xl" variant="outline" class="cta-btn-outline">
+          <!-- <UButton to="/pricing" size="xl" variant="outline" class="cta-btn-outline">
             <Icon name="ph:tag-fill" class="mr-2" /> View Pricing
-          </UButton>
+          </UButton> -->
         </div>
       </div>
     </section>
