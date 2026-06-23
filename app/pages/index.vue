@@ -76,7 +76,7 @@
 
         <h1 class="hero-title animate-fade-in-up">
           <span class="block hero-line-1 mb-3">Elevating Business</span>
-          <span class="block gradient-text">Beyond the Horizon</span>
+          <span class="block gradient-text">Beyond Horizon</span>
         </h1>
 
         <p class="hero-sub animate-fade-in-up-delay">
