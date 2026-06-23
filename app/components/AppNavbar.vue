@@ -4,7 +4,7 @@ const links = [
   { label: 'Services', to: '/services' },
   { label: 'About', to: '/about' },
   { label: 'Blog', to: '/blog' },
-  { label: 'Pricing', to: '/pricing' },
+  // { label: 'Pricing', to: '/pricing' },
   { label: 'Contact', to: '/contact' },
 ]
 
