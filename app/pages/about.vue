@@ -203,7 +203,7 @@ const skillGroups = [
     icon: 'ph:brain-fill',
     title: 'AI & Data Science',
     skills: [
-      { icon: 'logos:robot-fill', name: 'Scikit-Learn', level: 85 },
+      { icon: 'simple-icons:scikitlearn', name: 'Scikit-Learn', level: 85 },
       { icon: 'ph:chart-bar-fill', name: 'Data Analysis', level: 92 },
       { icon: 'ph:robot-fill', name: 'Machine Learning', level: 88 },
       { icon: 'ph:graph-fill', name: 'Data Visualization', level: 90 },
