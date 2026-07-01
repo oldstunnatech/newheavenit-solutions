@@ -75,14 +75,13 @@
         </div>
 
         <h1 class="hero-title animate-fade-in-up">
-          <span class="block hero-line-1 mb-3">Elevating Business</span>
-          <span class="block gradient-text">Beyond Horizon</span>
+          <span class="block hero-line-1 mb-3">Elevating business</span>
+          <span class="block gradient-text">beyond the horizon</span>
         </h1>
 
         <p class="hero-sub animate-fade-in-up-delay">
-          NewHeaven IT Solutions delivers world-class fullstack development, data analysis, data science,
-          and AI-powered solutions. We build digital experiences that elevate your business
-          beyond the horizon.
+         At NewHeaven IT Solutions, we don't just build software — we build businesses. Every product we ship is engineered to perform, every dataset we touch is turned into a decision, and every client we work with gets a partner who is invested in their outcome, not just their deadline.
+         From your first line of code to your first data-driven insight — we're with you beyond the horizon.
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 animate-fade-in-up-delay2">
@@ -118,8 +117,8 @@
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-20">
           <span class="section-tag">What We Offer</span>
-          <h2 class="section-title">Big Vision<br/>Real World Impact</h2>
-          <p class="section-sub">We blend cutting-edge technology with creative thinking to deliver results that drive better business decisions.</p>
+          <h2 class="section-title">Your Vision. Real Results.<br/>Zero Guesswork.</h2>
+          <p class="section-sub">We don't hand you technology and walk away — we stay until it works. Every solution we build is measured by one thing: the real, tangible impact it creates for your business.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div v-for="(service, i) in services" :key="service.title"
@@ -148,8 +147,8 @@
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
-            <span class="section-tag1">Why NewHeaven</span>
-            <h2 class="section-title text-left">Built Different.<br/>Delivered Better.</h2>
+            <span class="section-tag1">Why NewHeaven?</span>
+            <h2 class="section-title text-left">Result oriented<br/>Delivered Better.</h2>
             <p class="section-sub text-left mb-10">
               We don't just write code — we architect solutions. Every project at NewHeaven IT is treated as a mission to elevate your business to new heights.
             </p>
@@ -194,8 +193,8 @@
   <div class="relative z-10 max-w-7xl mx-auto">
     <div class="text-center mb-20">
       <span class="section-tag">Our Purpose</span>
-      <h2 class="section-title">Built on Belief,<br/>Driven by Vision</h2>
-      <p class="section-sub">Two ideas guide every line of code and every dataset we touch.</p>
+      <h2 class="section-title">Elevating business,<br/>through technology that works.</h2>
+      <p class="section-sub">Every business deserves more than just an online presence it deserves a digital foundation strong enough to grow on, compete on, and win on. That's exactly what we build.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="mv-card">
@@ -298,16 +297,17 @@ const techs = [
   { icon: 'logos:typescript-icon', name: 'TypeScript' },
   { icon: 'logos:nodejs-icon', name: 'Node.js' },
   { icon: 'logos:python', name: 'Python' },
+  { icon: 'logos:django', name: 'Django' },
   { icon: 'logos:postgresql', name: 'PostgreSQL' },
   { icon: 'logos:supabase-icon', name: 'Supabase' },
   { icon: 'logos:mysql', name: 'MySQL' },
   { icon: 'logos:scikit-learn', name: 'Scikit-Learn' },
   { icon: 'logos:matplotlib', name: 'MatPlot Lib' },
   { icon: 'logos:powerbi', name: 'PowerBi' },
-  { icon: 'logos:aws', name: 'AWS' },
-  { icon: 'logos:firebase', name: 'Firebase' },
+  { icon: 'logos:Numpy', name: 'Numpy' },
+  { icon: 'logos:pandas', name: 'Pandas' },
   { icon: 'logos:tailwindcss-icon', name: 'Tailwind' },
-  { icon: 'logos:docker-icon', name: 'Docker' },
+  { icon: 'logos:github', name: 'Github' },
 ]
 
 const starStyle = (i: number) => ({
@@ -486,7 +486,7 @@ useSeoMeta({
 .cta-section { background: linear-gradient(135deg, #0a0a2e 0%, #0d1b4b 30%, #0f2d6b 60%, #0369a1 100%); }
 
 /* ── SECTION LABELS ── */
-.section-tag { display: inline-block; background: rgba(14,165,233,0.15); color: #7dd3fc; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.3); margin-bottom: 1rem; }
+.section-tag { display: inline-block; background: rgba(14,165,233,0.15); color: green; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.3); margin-bottom: 1rem; }
 .section-tag1 { display: inline-block; background: rgba(14,165,233,0.15); color: #7dd3fc; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.3); margin-bottom: 1rem; margin-left: 200px; }
 .section-title { font-size: clamp(3rem, 4vw, 2rem); font-weight: 800; color: white; line-height: 1.2; margin-bottom: 1rem; text-align: center; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
 .section-sub { color: rgba(255,255,255,0.7); font-size: 1.05rem; max-width: 560px; margin: 0 auto; line-height: 1.7; text-align: center; }

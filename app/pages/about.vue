@@ -11,11 +11,11 @@
       <div class="relative z-10 max-w-4xl mx-auto text-center">
         <span class="section-tag animate-fade-in-down">Who We Are</span>
         <h1 class="page-title animate-fade-in-up">
-          The Story Behind <br />
+          The story behind <br />
           <span class="gradient-text">NewHeaven IT Solutions</span>
         </h1>
         <p class="page-sub animate-fade-in-up-delay">
-          I build software and decode data not because it's trendy, but because I genuinely believe the right tools can change how a business grows.
+          We build software and decode data not because it's trendy, but because we genuinely believe the right tools can change how a business grows.
         </p>
       </div>
     </section>
@@ -30,8 +30,8 @@
               <div class="profile-avatar">
                 <img src="/IMG_6158.JPG" alt="Oguntola Pelumi Joshua" class="profile-img" />
                 </div>
-              <h3 class="profile-name">Oguntola Pelumi Joshua</h3>
-              <p class="profile-role">Founder & Data Scientist</p>
+              <h3 class="profile-name">Oguntola Pelumi</h3>
+              <p class="profile-role">Founder & Team Lead</p>
               <div class="profile-tags">
                 <span class="profile-tag">Fullstack Dev</span>
                 <span class="profile-tag">Data Analyst</span>
@@ -57,32 +57,16 @@
 
           <!-- Story text -->
 <div>
-  <span class="section-tag1">My Story</span>
-  <h2 class="section-title text-left">Built from Passion, <br/>Driven by Purpose</h2>
+  <span class="section-tag1">Our Story</span>
+  <h2 class="section-title text-left">Built from passion<br/> measured by results.</h2>
   <div class="story-text space-y-4">
-    <p>
-      NewHeaven IT Solutions was born from a simple belief that every business,
-      no matter the size, deserves access to world-class technology solutions.
+    <p> NewHeaven IT Solutions wasn't built to be just another tech company it was built to solve a problem most businesses didn't know they could solve differently.
     </p>
-    <p>
-      My path here started with a background in Computer Science, where I first
-      discovered how powerful well-structured data could be. What began as a
-      curiosity about how things worked under the hood grew into a deeper pursuit
-      fullstack development, data analysis, and eventually machine learning and
-      data science.
+    <p> Our journey started with a Computer Science background, where we first discovered that data wasn't just numbers it was the language businesses spoke when they wanted to grow. That discovery pulled us deeper: into fullstack development, data analysis, machine learning, and eventually data science. Not as separate pursuits, but as one connected vision.
     </p>
-    <p>
-      The more I built, the more I noticed a gap: startups and growing businesses
-      were often forced to choose between a developer who could build their product
-      and a data specialist who could make sense of it rarely both. That gap is
-      what convinced me founders needed a single partner who understood the full
-      picture, not two disconnected hires.
+    <p> The more we built, the clearer the gap became. Startups and growing businesses were constantly forced into an impossible choice hire a developer and sacrifice data insight, or hire a data specialist and stall on product delivery. Nobody was offering both under one roof, with one clear point of accountability. That gap became our mission.
     </p>
-    <p>
-      NewHeaven IT Solutions is the answer to that realization. Every project I take
-      on is treated as a mission. I don't just write code, I architect solutions
-      that scale, perform, and deliver measurable results, backed by the same data
-      intelligence that shaped my own journey into this field.
+    <p> Today, NewHeaven IT Solutions is the answer to that gap. We don't just write code we architect solutions that scale, perform, and generate real business intelligence from day one. Every project we take on is treated as a mission, not a transaction. Your growth is the metric we measure ourselves by.
     </p>
   </div>
   <UButton to="/contact" color="primary" variant="solid" size="lg" class="mt-8">
@@ -176,7 +160,7 @@
         </h2>
         <p class="text-sky-100 text-lg mb-10">
           Whether you have a project in mind or just want to explore possibilities —
-          I'd love to hear from you.
+          We'd love to hear from you.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <UButton to="/contact" size="xl" class="cta-btn-white">

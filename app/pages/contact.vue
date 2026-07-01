@@ -11,12 +11,12 @@
       <div class="relative z-10 max-w-4xl mx-auto text-center">
         <span class="section-tag animate-fade-in-down">Get In Touch</span>
         <h1 class="page-title animate-fade-in-up">
-          Let's Build Something <br />
-          <span class="gradient-text">Extraordinary Together</span>
+          Let's build something <br />
+          <span class="gradient-text">extraordinary together</span>
         </h1>
         <p class="page-sub animate-fade-in-up-delay">
-          Have a project in mind? Fill out the form below and I'll get back to you
-          within 24 hours with a free consultation.
+          Have a project in mind? Fill out the form below and we'll get back to you
+          within minutes with a free consultation.
         </p>
       </div>
     </section>
@@ -50,7 +50,7 @@
               <Icon name="ph:clock-countdown-fill" class="text-green-500 text-xl" />
               <div>
                 <p class="font-700 text-sky-800 font-bold">Fast Response</p>
-                <p class="text-slate-500 text-sm">Typically reply within 24 hours</p>
+                <p class="text-slate-500 text-sm">Typically reply within minutes</p>
               </div>
             </div>
 
@@ -73,8 +73,8 @@
                 </div>
                 <h3 class="success-title">Message Sent!</h3>
                 <p class="success-sub">
-                  Thank you for reaching out. I'll review your message and get back to you
-                  within 24 hours.
+                  Thank you for reaching out. We'll review your message and get back to you
+                  within few minutes.
                 </p>
                 <UButton color="primary" variant="solid" @click="submitted = false" class="mt-6">
                   <Icon name="ph:arrow-counter-clockwise-bold" class="mr-2" /> Send Another Message
@@ -245,9 +245,9 @@ const socials = [
 
 const faqs = reactive([
   { q: 'How long does a typical project take?', a: 'It depends on scope. A simple website takes 1–2 weeks. A full web app or data science project can take 4–12 weeks. We\'ll give you a clear timeline after the discovery call.', open: false },
-  { q: 'Do you offer ongoing support after launch?', a: 'Yes! I offer monthly maintenance and support retainer packages to keep your project running smoothly after delivery.', open: false },
-  { q: 'What payment methods do you accept?', a: 'I accept bank transfers, PayPal, Stripe, and crypto. A 50% deposit is required before work begins, with the remainder due on delivery.', open: false },
-  { q: 'Can you work with my existing codebase?', a: 'Absolutely. I regularly work with existing projects to add features, fix bugs, or perform full refactors.', open: false },
+  { q: 'Do you offer ongoing support after launch?', a: 'Yes! We offer monthly maintenance and support retainer packages to keep your project running smoothly after delivery.', open: false },
+  { q: 'What payment methods do you accept?', a: 'We accept bank transfers, PayPal, Stripe, and crypto. A 50% deposit is required before work begins, with the remainder due on delivery.', open: false },
+  { q: 'Can you work with my existing codebase?', a: 'Absolutely. We regularly work with existing projects to add features, fix bugs, or perform full refactors.', open: false },
 ])
 
 const validate = () => {

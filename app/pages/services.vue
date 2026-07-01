@@ -9,10 +9,10 @@
         <div class="light-ray ray-3" />
       </div>
       <div class="relative z-10 max-w-4xl mx-auto text-center">
-        <span class="section-tag animate-fade-in-down">What We Offer</span>
+        <span class="section-tag animate-fade-in-down">What We Offer!</span>
         <h1 class="page-title animate-fade-in-up">
-          Services Built for <br />
-          <span class="gradient-text">Real Business Growth</span>
+          Services built for <br />
+          <span class="gradient-text">real business growth.</span>
         </h1>
         <p class="page-sub animate-fade-in-up-delay">
           From sleek web applications to advanced AI models — NewHeaven IT Solutions
@@ -114,7 +114,7 @@
       <div class="relative z-10 max-w-3xl mx-auto text-center">
         <Icon name="ph:rocket-launch-fill" class="text-yellow-300 mb-6" style="font-size:3rem" />
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-          Not Sure Which Service <br />You Need?
+          Not sure which service <br />you need?
         </h2>
         <p class="text-sky-100 text-lg mb-10">
           Book a free 30-minute consultation and we'll map out exactly what your business needs.

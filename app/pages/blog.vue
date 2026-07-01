@@ -11,8 +11,8 @@
       <div class="relative z-10 max-w-4xl mx-auto text-center">
         <span class="section-tag animate-fade-in-down">Blog</span>
         <h1 class="page-title animate-fade-in-up">
-          Insights, Tutorials & <br />
-          <span class="gradient-text">Tech Deep Dives</span>
+          Insights, tutorials & <br />
+          <span class="gradient-text">tech deep dives</span>
         </h1>
         <p class="page-sub animate-fade-in-up-delay">
           Practical articles on fullstack development, data science, AI, and growing

@@ -4,12 +4,12 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  content: {
-    database: {
-      type: 'postgres',
-      url: process.env.NUXT_CONTENT_DB_URL,
-    }
-  },
+  // content: {
+  //   database: {
+  //     type: 'postgres',
+  //     url: process.env.NUXT_CONTENT_DB_URL,
+  //   }
+  // },
 
   supabase: {
     redirect: false,
@@ -45,7 +45,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/icon',
     '@nuxt/fonts',
-    '@nuxt/content',
+    // '@nuxt/content',
     '@nuxtjs/supabase',
   ]
 })
