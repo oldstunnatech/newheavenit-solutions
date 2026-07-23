@@ -1,11 +1,10 @@
 <script setup lang="ts">
 const links = [
-  { label: 'Home', to: '/' },
-  { label: 'Services', to: '/services' },
-  { label: 'About', to: '/about' },
-  { label: 'Blog', to: '/blog' },
-  // { label: 'Pricing', to: '/pricing' },
-  { label: 'Contact', to: '/contact' },
+  { label: 'Home', to: '/', icon: 'ph:house-fill' },
+  { label: 'Solutions', to: '/services', icon: 'ph:stack-fill' },
+  { label: 'About', to: '/about', icon: 'ph:info-fill' },
+  { label: 'Blog', to: '/blog', icon: 'ph:newspaper-fill' },
+  { label: 'Contact', to: '/contact', icon: 'ph:envelope-fill' },
 ]
 
 const mobileOpen = ref(false)
@@ -27,17 +26,19 @@ watch(() => route.path, () => {
       </NuxtLink>
 
       <!-- Desktop links -->
-      <ul class="hidden md:flex items-center gap-8">
+      <ul class="hidden md:flex flex-row items-center gap-1">
         <li v-for="link in links" :key="link.to">
           <NuxtLink
-            :to="link.to"
-            class="text-slate-500 text-sm font-medium transition-colors hover:text-sky-600"
-            active-class="text-sky-700 font-semibold"
+          :to="link.to"
+          class="mobile-link"
+          active-class="mobile-link-active"
+          @click="mobileOpen = false"
           >
-            {{ link.label }}
+          <Icon :name="link.icon" class="mobile-link-icon" />
+          <span>{{ link.label }}</span>
           </NuxtLink>
-        </li>
-      </ul>
+          </li>
+          </ul>
 
       <!-- Desktop CTA -->
       <UButton to="/contact" color="primary" variant="solid" size="sm" class="hidden md:flex">
@@ -57,14 +58,16 @@ watch(() => route.path, () => {
         <ul class="flex flex-col gap-1 p-4">
           <li v-for="link in links" :key="link.to">
             <NuxtLink
-              :to="link.to"
-              class="mobile-link"
-              active-class="mobile-link-active"
+            :to="link.to"
+            class="mobile-link"
+            active-class="mobile-link-active"
+            @click="mobileOpen = false"
             >
-              {{ link.label }}
+            <Icon :name="link.icon" class="mobile-link-icon" />
+            <span>{{ link.label }}</span>
             </NuxtLink>
-          </li>
-        </ul>
+            </li>
+            </ul>
         <div class="px-4 pb-4">
           <UButton to="/contact" color="primary" variant="solid" size="lg" class="w-full"
             @click="mobileOpen = false">
@@ -82,7 +85,7 @@ watch(() => route.path, () => {
   border-top: 1px solid #bae6fd;
   backdrop-filter: blur(12px);
 }
-.mobile-link {
+/* .mobile-link {
   display: block;
   padding: 12px 16px;
   border-radius: 0.75rem;
@@ -99,7 +102,7 @@ watch(() => route.path, () => {
 .mobile-link-active {
   background: rgba(14, 165, 233, 0.15);
   color: #0c4a6e;
-}
+} */
 .slide-down-enter-active,
 .slide-down-leave-active {
   transition: all 0.3s ease;
@@ -109,4 +112,73 @@ watch(() => route.path, () => {
   opacity: 0;
   transform: translateY(-10px);
 }
+
+
+
+/* ── Desktop nav links ── */
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #0369a1;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  letter-spacing: 0.01em;
+}
+.nav-link:hover {
+  background: rgba(14,165,233,0.1);
+  color: #0c4a6e;
+}
+.nav-link-active {
+  background: rgba(14,165,233,0.15);
+  color: #0c4a6e;
+}
+.nav-link-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+nav ul {
+  flex-direction: row !important;
+}
+
+/* ── Mobile nav links ── */
+.mobile-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 12px 16px;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0369a1;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.mobile-link:hover {
+  background: rgba(14,165,233,0.1);
+  color: #0c4a6e;
+}
+.mobile-link-active {
+  background: rgba(14,165,233,0.15);
+  color: #0c4a6e;
+}
+.mobile-link-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  color: #0ea5e9;
+}
+
+.mobile-link {
+  display: block;
+}
+
+.mobile-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; 
+  }
 </style>

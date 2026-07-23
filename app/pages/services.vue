@@ -9,14 +9,13 @@
         <div class="light-ray ray-3" />
       </div>
       <div class="relative z-10 max-w-4xl mx-auto text-center">
-        <span class="section-tag animate-fade-in-down">What We Offer!</span>
+        <span class="section-tag animate-fade-in-down">What We Offer?</span>
         <h1 class="page-title animate-fade-in-up">
-          Services built for <br />
-          <span class="gradient-text">real business growth.</span>
+          Everything business needs <br />
+          <span class="gradient-text">to grow digitally.</span>
         </h1>
         <p class="page-sub animate-fade-in-up-delay">
-          From sleek web applications to advanced AI models — NewHeaven IT Solutions
-          covers every layer of your digital transformation journey.
+          Four focused services. One dedicated partner. Whether you need a professional website, mine data, data analytics, or a machine learning model — we build it right, the first time.
         </p>
       </div>
     </section>
@@ -72,7 +71,7 @@
     </section>
 
     <!-- PROCESS SECTION -->
-    <section class="py-24 px-6 process-bg">
+    <!-- <section class="py-24 px-6 process-bg">
       <div class="max-w-5xl mx-auto text-center">
         <span class="section-tag">How We Work</span>
         <h2 class="section-title">Our Simple 4-Step Process</h2>
@@ -87,10 +86,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- ADD-ONS -->
-    <section class="py-24 px-6 section-light">
+    <!-- <section class="py-24 px-6 section-light">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-16">
           <span class="section-tag">Add-Ons</span>
@@ -105,7 +104,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- CTA -->
     <section class="relative py-32 px-6 cta-bg overflow-hidden">
@@ -114,10 +113,10 @@
       <div class="relative z-10 max-w-3xl mx-auto text-center">
         <Icon name="ph:rocket-launch-fill" class="text-yellow-300 mb-6" style="font-size:3rem" />
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-          Not sure which service <br />you need?
+          Not sure which solutions <br />you need?
         </h2>
         <p class="text-sky-100 text-lg mb-10">
-          Book a free 30-minute consultation and we'll map out exactly what your business needs.
+          Contact us for a no obligation consultation. Together, we will find the right path.
         </p>
         <UButton to="/contact" size="xl" class="cta-btn-white">
           <Icon name="ph:calendar-check-fill" class="mr-2" /> Book Free Consultation
@@ -133,38 +132,75 @@ const mainServices = [
   {
     tag: 'Web Development',
     icon: 'ph:globe-hemisphere-west-fill',
-    title: 'Fullstack Web Development',
-    description: 'We design and build high-performance web applications from front to back. Whether you need a SaaS platform, a corporate site, or a custom internal tool — we deliver clean, scalable, and maintainable code.',
+    title: 'Website Development',
+    description: 'Professional, modern websites built to represent your brand and convert visitors into clients. We design and build websites that not only look great but are built to function, rank, and grow with your business.',
     items: [
-      'Custom Vue / Nuxt / React applications',
-      'RESTful & GraphQL API development',
-      'Database design & optimization',
-      'Cloud deployment (AWS, Vercel, Supabase)',
-      'Authentication & role-based access',
-      'Performance optimization & SEO',
+      'Custom Website Design',
+      'Responsive Mobile-First Layout',
+      'Landing Page Development',
+      'E-Commerce Website',
+      'Business Portfolio Website',
+      'Website Speed Optimization',
+      'SEO-Ready Structure',
+      'Contact Form Integration',
+      'Website Maintenance & Updates',
+      'Domain & Hosting Setup',
+      'SSL Certificate Configuration',
+      'Content Management System (CMS)',
     ],
-    visualLabel: 'app.vue',
+    visualLabel: 'website.vue',
     visualLines: [
-      { icon: 'ph:code-bold', text: 'defineNuxtConfig({ ... })', width: 90 },
-      { icon: 'ph:database-fill', text: 'Supabase connected ✓', width: 75 },
-      { icon: 'ph:cloud-arrow-up-fill', text: 'Deployed to Vercel ✓', width: 80 },
-      { icon: 'ph:lock-fill', text: 'Auth configured ✓', width: 65 },
+      { icon: 'ph:paint-brush-fill', text: 'Custom design applied ✓', width: 90 },
+      { icon: 'ph:device-mobile-fill', text: 'Mobile responsive ✓', width: 80 },
+      { icon: 'ph:rocket-launch-fill', text: 'Deployed & live ✓', width: 85 },
+      { icon: 'ph:lock-fill', text: 'SSL configured ✓', width: 70 },
     ],
     badge: 'Production Ready',
   },
   {
+    tag: 'Data Mining',
+    icon: 'ph:magnifying-glass-fill',
+    title: 'Data Mining',
+    description: 'We extract, collect, and structure the right data from the right sources so your startup stops guessing and starts making decisions backed by real market intelligence.',
+    items: [
+      'Competitor Price & Product Monitoring',
+      'B2B Lead Generation & Extraction',
+      'Market Research Data Collection',
+      'Social Media Data Mining',
+      'Customer Sentiment Analysis',
+      'Industry Trend Tracking',
+      'E-Commerce Product Data Scraping',
+      'Automated Data Collection Scripts',
+      'Data Cleaning & Structuring',
+      'Delivered in Excel, CSV or Dashboard',
+    ],
+    visualLabel: 'mining.py',
+    visualLines: [
+      { icon: 'ph:magnifying-glass-fill', text: 'Scraping 1,200 records...', width: 88 },
+      { icon: 'ph:funnel-fill', text: 'Data cleaned & structured ✓', width: 75 },
+      { icon: 'ph:export-fill', text: 'Exported to CSV & Excel ✓', width: 82 },
+      { icon: 'ph:check-circle-fill', text: 'B2B leads ready ✓', width: 70 },
+    ],
+    badge: 'Market Intelligence',
+  },
+  {
     tag: 'Data & Analytics',
     icon: 'ph:chart-bar-fill',
-    title: 'Data Analysis & Visualization',
-    description: 'Turn your raw data into clear, actionable insights. We build interactive dashboards, automated reports, and data pipelines that help you make smarter decisions faster.',
+    title: 'Data Analysis',
+    description: 'We turn your raw, messy data into clear visuals and actionable insights so you know exactly what is working, what is not, and where to focus next to grow your business.',
     items: [
-      'Interactive dashboards (Plotly, D3, Power BI)',
-      'KPI tracking & automated reports',
-      'Data cleaning & transformation',
-      'SQL & NoSQL query optimization',
-      'Business intelligence consulting',
-      'Excel / Google Sheets automation',
-      'Data Mining and Extraction',
+      'Sales & Revenue Analysis',
+      'Customer Behavior Analysis',
+      'Interactive Dashboard Design',
+      'KPI Tracking & Reporting',
+      'Market & Competitor Analysis',
+      'Financial Data Analysis',
+      'Product Performance Analysis',
+      'Google Analytics & Social Media Insights',
+      'Monthly & Weekly Business Reports',
+      'Excel, Power BI & Python Reports',
+      'Data Cleaning & Preparation',
+      'Actionable Recommendations',
     ],
     visualLabel: 'dashboard.py',
     visualLines: [
@@ -178,15 +214,21 @@ const mainServices = [
   {
     tag: 'AI & Machine Learning',
     icon: 'ph:brain-fill',
-    title: 'Data Science & AI Solutions',
-    description: 'Leverage the power of machine learning and artificial intelligence to automate processes, predict outcomes, and unlock new opportunities hidden in your data.',
+    title: 'Data Science & AI',
+    description: 'We build intelligent machine learning models and AI-powered systems that help your startup predict outcomes, automate decisions, and solve complex business problems before they become expensive mistakes.',
     items: [
-      'Custom ML model development',
-      'Predictive analytics & forecasting',
+      'Custom Machine Learning Model Development',
+      'Sales & Demand Forecasting',
+      'Customer Churn Prediction',
+      'Fraud & Anomaly Detection',
       'Natural Language Processing (NLP)',
-      'Computer vision solutions',
-      'AI integration into existing apps',
-      'Model deployment & monitoring',
+      'Sentiment Analysis & Text Classification',
+      'Recommendation Systems',
+      'Computer Vision & Image Recognition',
+      'Predictive Analytics & Forecasting',
+      'AI-Powered Business Automation',
+      'Model Deployment & Integration',
+      'Model Performance Monitoring & Retraining',
     ],
     visualLabel: 'model.py',
     visualLines: [
@@ -198,6 +240,7 @@ const mainServices = [
     badge: 'AI Powered',
   },
 ]
+
 
 const steps = [
   { icon: 'ph:chats-circle-fill', title: 'Discovery', desc: 'We learn about your business, goals, and challenges in a free consultation call.', },

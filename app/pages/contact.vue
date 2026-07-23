@@ -10,12 +10,11 @@
       </div>
       <div class="relative z-10 max-w-4xl mx-auto text-center">
         <span class="section-tag animate-fade-in-down">Get In Touch</span>
-        <h1 class="page-title animate-fade-in-up">
-          Let's build something <br />
-          <span class="gradient-text">extraordinary together</span>
+        <h1 class="page-title animate-fade-in-up">Let's talk<br />
+          <span class="gradient-text"></span>
         </h1>
         <p class="page-sub animate-fade-in-up-delay">
-          Have a project in mind? Fill out the form below and we'll get back to you
+          Fill out the form below and we'll get back to you
           within minutes with a free consultation.
         </p>
       </div>
@@ -91,7 +90,7 @@
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div class="field-group">
                       <label class="field-label">
-                        <Icon name="ph:user-fill" class="mr-1" /> Full Name *
+                        <Icon name="ph:user-fill" class="mr-1" /> Name *
                       </label>
                       <input v-model="form.name" type="text" placeholder="Enter full name"
                         class="field-input" :class="errors.name ? 'border-red-400' : ''" />
@@ -129,10 +128,15 @@
 
                   <!-- Budget -->
                   <div class="field-group">
-                    <label class="field-label">
-                      <Icon name="ph:currency-dollar-fill" class="mr-1" /> Budget Range
-                    </label>
-                    <div class="budget-grid">
+                    
+                    <div class="field-group">
+                      <label class="field-label">
+                        <Icon name="ph:building-office-fill" class="mr-1" /> Address
+                      </label>
+                      <input v-model="form.company" type="text" placeholder="Location address"
+                        class="field-input" />
+                    </div>
+                    <!-- <div class="budget-grid">
                       <button v-for="b in budgets" :key="b"
                         type="button"
                         class="budget-btn"
@@ -140,7 +144,7 @@
                         @click="form.budget = b">
                         {{ b }}
                       </button>
-                    </div>
+                    </div> -->
                   </div>
 
                   <!-- Message -->
@@ -211,7 +215,7 @@ const form = reactive({
   email: '',
   company: '',
   service: '',
-  budget: '',
+  address: '',
   message: '',
 })
 
@@ -229,7 +233,7 @@ const services = [
   'Other',
 ]
 
-const budgets = ['< $500', '$500–$2k', '$2k–$5k', '$5k–$10k', '$10k+']
+// const budgets = ['< $500', '$500–$2k', '$2k–$5k', '$5k–$10k', '$10k+']
 
 const contactInfo = [
   { icon: 'ph:envelope-fill', label: 'Email', value: 'newheavenit-solutions@outlook.com' },
@@ -272,7 +276,7 @@ const handleSubmit = async () => {
   email: form.email,
   company: form.company || null,
   service: form.service || null,
-  budget: form.budget || null,
+  budget: form.address || null,
   message: form.message,
 })
 if (error) throw error
@@ -284,7 +288,7 @@ await $fetch('/api/contact', {
 })
 
 submitted.value = true
-    Object.assign(form, { name: '', email: '', company: '', service: '', budget: '', message: '' })
+    Object.assign(form, { name: '', email: '', company: '', service: '', address: '', message: '' })
   } catch (err: any) {
     submitError.value = 'Something went wrong. Please try again or email us directly.'
   } finally {
@@ -293,7 +297,7 @@ submitted.value = true
 }
 
 useSeoMeta({
-  title: 'Contact — NewHeaven IT Solutions',
+  title: 'Contact NewHeaven IT Solutions',
   description: 'Get in touch with NewHeaven IT Solutions for a free consultation on your next project.',
 })
 </script>

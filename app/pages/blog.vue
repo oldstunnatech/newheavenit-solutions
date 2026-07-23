@@ -161,7 +161,7 @@ const allPosts = [
   {
     icon: 'ph:globe-hemisphere-west-fill',
     title: 'Building Scalable Nuxt 3 Apps with Supabase',
-    excerpt: 'Learn how to build production-ready Nuxt applications with Supabase as your backend — authentication, database, storage, and real-time features.',
+    excerpt: 'Learn how to build production-ready Nuxt applications with Supabase as your backend authentication, database, storage, and real-time features.',
     tags: ['Fullstack', 'Tutorials'],
     date: 'May 28, 2025',
     readTime: '8 min read',
@@ -169,7 +169,7 @@ const allPosts = [
   {
     icon: 'ph:chart-bar-fill',
     title: 'Data Visualization Best Practices for Business Dashboards',
-    excerpt: 'How to design dashboards that actually get used — choosing the right chart types, color palettes, and KPIs that drive decisions.',
+    excerpt: 'How to design dashboards that actually get used choosing the right chart types, color palettes, and KPIs that drive decisions.',
     tags: ['Data Science', 'Business'],
     date: 'May 15, 2025',
     readTime: '6 min read',
@@ -201,7 +201,7 @@ const allPosts = [
   {
     icon: 'ph:robot-fill',
     title: 'Integrating OpenAI API into Your Nuxt Application',
-    excerpt: 'Step-by-step guide to building AI-powered features in your Nuxt app — chatbots, content generation, and intelligent search.',
+    excerpt: 'Step-by-step guide to building AI-powered features in your Nuxt app chatbots, content generation, and intelligent search.',
     tags: ['AI & ML', 'Fullstack'],
     date: 'Mar 30, 2025',
     readTime: '9 min read',
@@ -226,7 +226,7 @@ const subscribeNewsletter = () => {
 }
 
 useSeoMeta({
-  title: 'Blog — NewHeaven IT Solutions',
+  title: 'Blog NewHeaven IT Solutions',
   description: 'Practical articles on fullstack development, data science, AI, and growing your business with technology.',
 })
 </script>
