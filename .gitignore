@@ -25,3 +25,4 @@ logs
 .env
 .vercel
 .env*
+public/*.mp4
