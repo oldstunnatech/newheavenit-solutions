@@ -7,7 +7,7 @@
   <!-- Background video -->
   <video
     class="absolute inset-0 w-full h-full object-cover z-0"
-    src="/https://res.cloudinary.com/lu6y4btx/video/upload/v1784833222/28115-367748176_olrl4i.mp4"
+    src="https://res.cloudinary.com/lu6y4btx/video/upload/v1784833222/28115-367748176_olrl4i.mp4"
     autoplay
     loop
     muted
