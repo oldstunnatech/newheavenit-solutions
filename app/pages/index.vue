@@ -7,7 +7,7 @@
   <!-- Background video -->
   <video
     class="absolute inset-0 w-full h-full object-cover z-0"
-    src="/28115-367748176.mp4"
+    src="https://res.cloudinary.com/lu6y4btx/video/upload/v1784833222/28115-367748176_olrl4i.mp4"
     autoplay
     loop
     muted
@@ -55,13 +55,6 @@
 
   </div>
 
-  <!-- Scroll indicator -->
-  <!-- <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-indicator">
-    <div class="scroll-mouse">
-      <div class="scroll-wheel" />
-    </div>
-  </div> -->
-
 </section>
 
 
@@ -71,7 +64,7 @@
   <!-- Background video -->
   <video
     class="absolute inset-0 w-full h-full object-cover z-0"
-    src="/132838-754950587.mp4"
+    src="https://res.cloudinary.com/lu6y4btx/video/upload/v1784833445/132838-754950587_ddyip3.mp4"
     autoplay
     loop
     muted
@@ -188,7 +181,7 @@
   <!-- Background video -->
   <video
     class="absolute inset-0 w-full h-full object-cover z-0"
-    src="/144555-784867402.mp4"
+    src="https://res.cloudinary.com/lu6y4btx/video/upload/v1784833569/144555-784867402_gir6bx.mp4"
     autoplay
     loop
     muted
@@ -248,7 +241,7 @@
   <!-- Background video -->
   <video
     class="absolute inset-0 w-full h-full object-cover z-0"
-    src="/22183-712840599.mp4"
+    src="https://res.cloudinary.com/lu6y4btx/video/upload/v1784833569/144555-784867402_gir6bx.mp4"
     autoplay
     loop
     muted
