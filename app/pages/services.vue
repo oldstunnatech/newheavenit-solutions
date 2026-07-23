@@ -2,127 +2,135 @@
   <div class="overflow-x-hidden">
 
     <!-- HERO -->
-    <section class="relative py-36 px-6 overflow-hidden services-hero">
-      <div class="absolute inset-0 overflow-hidden">
-        <div class="light-ray ray-1" />
-        <div class="light-ray ray-2" />
-        <div class="light-ray ray-3" />
-      </div>
-      <div class="relative z-10 max-w-4xl mx-auto text-center">
-        <span class="section-tag animate-fade-in-down">What We Offer?</span>
-        <h1 class="page-title animate-fade-in-up">
-          Everything business needs <br />
-          <span class="gradient-text">to grow digitally.</span>
-        </h1>
-        <p class="page-sub animate-fade-in-up-delay">
-          Four focused services. One dedicated partner. Whether you need a professional website, mine data, data analytics, or a machine learning model — we build it right, the first time.
-        </p>
-      </div>
-    </section>
+    <section class="relative py-36 px-6 overflow-hidden">
+
+  <!-- Background video -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    src="/28115-367748176.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+    preload="auto"
+  />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 z-1 services-hero-overlay" />
+
+  <div class="relative z-10 max-w-4xl mx-auto text-center">
+    <span class="section-tag animate-fade-in-down">What We Offer</span>
+    <h1 class="page-title animate-fade-in-up">
+      Everything your business needs <br />
+      <span class="gradient-text">to grow digitally.</span>
+    </h1>
+    <p class="page-sub animate-fade-in-up-delay">
+      Four focused services. One dedicated partner. Whether you need a
+      professional website, mined data, sharp analytics, or a machine
+      learning model — we build it right, the first time.
+    </p>
+  </div>
+
+</section>
 
     <!-- MAIN SERVICES -->
-    <section class="py-24 px-6 section-light">
-      <div class="max-w-7xl mx-auto">
-        <div v-for="(service, i) in mainServices" :key="service.title"
-          class="service-row" :class="i % 2 === 1 ? 'flex-row-reverse' : ''">
-          <!-- Text -->
-          <div class="service-text">
-            <div class="service-icon-wrap">
-              <Icon :name="service.icon" class="service-icon-el" />
-            </div>
-            <span class="section-tag">{{ service.tag }}</span>
-            <h2 class="service-heading">{{ service.title }}</h2>
-            <p class="service-desc">{{ service.description }}</p>
-            <ul class="service-list">
-              <li v-for="item in service.items" :key="item">
-                <Icon name="ph:check-circle-fill" class="check-icon" />
-                {{ item }}
-              </li>
-            </ul>
-            <UButton :to="'/contact'" color="primary" variant="solid" size="lg" class="mt-6 service-cta">
-              <Icon name="ph:arrow-right-bold" class="mr-2" /> Get Started
-            </UButton>
-          </div>
+    <section class="relative py-24 px-6 overflow-hidden">
 
-          <!-- Visual card -->
-          <div class="service-visual">
-            <div class="visual-card">
-              <div class="visual-header">
-                <div class="visual-dots">
-                  <span class="dot red" /><span class="dot yellow" /><span class="dot green" />
-                </div>
-                <span class="visual-label">{{ service.visualLabel }}</span>
-              </div>
-              <div class="visual-body">
-                <div v-for="line in service.visualLines" :key="line.text"
-                  class="visual-line" :style="`width: ${line.width}%`">
-                  <Icon :name="line.icon" class="text-sky-400 mr-2 flex-shrink-0" />
-                  <span>{{ line.text }}</span>
-                </div>
-              </div>
-              <div class="visual-badge">
-                <Icon name="ph:star-fill" class="text-yellow-400 mr-1" />
-                {{ service.badge }}
-              </div>
-            </div>
-          </div>
+  <!-- Background video -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    src="/132838-754950587.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+    preload="auto"
+  />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 z-1 main-services-overlay" />
+
+  <div class="relative z-10 max-w-7xl mx-auto">
+    <div v-for="(service, i) in mainServices" :key="service.title"
+      class="service-row" :class="i % 2 === 1 ? 'flex-row-reverse' : ''">
+
+      <!-- Text -->
+      <div class="service-text">
+        <div class="service-icon-wrap-v">
+          <Icon :name="service.icon" class="service-icon-el-v" />
         </div>
-      </div>
-    </section>
-
-    <!-- PROCESS SECTION -->
-    <!-- <section class="py-24 px-6 process-bg">
-      <div class="max-w-5xl mx-auto text-center">
-        <span class="section-tag">How We Work</span>
-        <h2 class="section-title">Our Simple 4-Step Process</h2>
-        <p class="section-sub mb-16">Clear, transparent, and collaborative from start to finish.</p>
-
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-6">
-          <div v-for="(step, i) in steps" :key="step.title" class="step-card">
-            <div class="step-number">{{ i + 1 }}</div>
-            <Icon :name="step.icon" class="step-icon" />
-            <h3 class="step-title">{{ step.title }}</h3>
-            <p class="step-desc">{{ step.desc }}</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- ADD-ONS -->
-    <!-- <section class="py-24 px-6 section-light">
-      <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16">
-          <span class="section-tag">Add-Ons</span>
-          <h2 class="section-title">Extra Services</h2>
-          <p class="section-sub">Complement your core project with these powerful extras.</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div v-for="addon in addons" :key="addon.title" class="addon-card">
-            <Icon :name="addon.icon" class="addon-icon" />
-            <h4 class="addon-title">{{ addon.title }}</h4>
-            <p class="addon-desc">{{ addon.desc }}</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- CTA -->
-    <section class="relative py-32 px-6 cta-bg overflow-hidden">
-      <div class="cta-orb orb-1" />
-      <div class="cta-orb orb-2" />
-      <div class="relative z-10 max-w-3xl mx-auto text-center">
-        <Icon name="ph:rocket-launch-fill" class="text-yellow-300 mb-6" style="font-size:3rem" />
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-          Not sure which solutions <br />you need?
-        </h2>
-        <p class="text-sky-100 text-lg mb-10">
-          Contact us for a no obligation consultation. Together, we will find the right path.
-        </p>
-        <UButton to="/contact" size="xl" class="cta-btn-white">
-          <Icon name="ph:calendar-check-fill" class="mr-2" /> Book Free Consultation
+        <span class="service-tag-v">{{ service.tag }}</span>
+        <h2 class="service-heading-v">{{ service.title }}</h2>
+        <p class="service-desc-v">{{ service.description }}</p>
+        <ul class="service-list-v">
+          <li v-for="item in service.items" :key="item">
+            <Icon name="ph:check-circle-fill" class="check-icon-v" />
+            {{ item }}
+          </li>
+        </ul>
+        <UButton :to="'/contact'" color="primary" variant="solid" size="lg" class="mt-6 service-cta">
+          <Icon name="ph:arrow-right-bold" class="mr-2" /> Get Started
         </UButton>
       </div>
-    </section>
+
+      <!-- Visual card -->
+      <!-- Visual image -->
+<div class="service-visual">
+  <div class="service-img-wrap">
+    <img
+      :src="service.image"
+      :alt="service.title"
+      class="service-img"
+    />
+    <div class="service-img-overlay" />
+    <div class="service-img-badge">
+      <Icon name="ph:star-fill" class="text-yellow-400 mr-1" />
+      {{ service.badge }}
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- CTA -->
+    <section class="relative py-32 px-6 overflow-hidden">
+
+  <!-- Background video -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    src="/22183-712840599.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+    preload="auto"
+  />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 z-1 services-cta-overlay" />
+
+  <div class="relative z-10 max-w-3xl mx-auto text-center">
+    <Icon
+      name="ph:rocket-launch-fill"
+      class="text-yellow-300 mb-6"
+      style="font-size:3rem; filter: drop-shadow(0 0 20px rgba(252,211,77,0.6))"
+    />
+    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6"
+      style="text-shadow: 0 2px 30px rgba(0,0,0,0.4)">
+      Not sure which solutions <br />you need?
+    </h2>
+    <p class="text-sky-100 text-lg mb-10 opacity-90">
+      Contact us for a free consultation. Together, we will find the right path.
+    </p>
+    <UButton to="/contact" size="xl" class="cta-btn-white">
+      <Icon name="ph:calendar-check-fill" class="mr-2" /> Book Free Consultation
+    </UButton>
+  </div>
+
+</section>
 
   </div>
 </template>
@@ -133,6 +141,7 @@ const mainServices = [
     tag: 'Web Development',
     icon: 'ph:globe-hemisphere-west-fill',
     title: 'Website Development',
+    image: '/annie-spratt-QckxruozjRg-unsplash.jpg',
     description: 'Professional, modern websites built to represent your brand and convert visitors into clients. We design and build websites that not only look great but are built to function, rank, and grow with your business.',
     items: [
       'Custom Website Design',
@@ -161,6 +170,7 @@ const mainServices = [
     tag: 'Data Mining',
     icon: 'ph:magnifying-glass-fill',
     title: 'Data Mining',
+    image: '/pexels-kampus-6248987.jpg',
     description: 'We extract, collect, and structure the right data from the right sources so your startup stops guessing and starts making decisions backed by real market intelligence.',
     items: [
       'Competitor Price & Product Monitoring',
@@ -187,6 +197,8 @@ const mainServices = [
     tag: 'Data & Analytics',
     icon: 'ph:chart-bar-fill',
     title: 'Data Analysis',
+    image: '/path-digital-tR0jvlsmCuQ-unsplash.jpg',
+
     description: 'We turn your raw, messy data into clear visuals and actionable insights so you know exactly what is working, what is not, and where to focus next to grow your business.',
     items: [
       'Sales & Revenue Analysis',
@@ -215,6 +227,7 @@ const mainServices = [
     tag: 'AI & Machine Learning',
     icon: 'ph:brain-fill',
     title: 'Data Science & AI',
+    image: '/pexels-yankrukov-7693692.jpg',
     description: 'We build intelligent machine learning models and AI-powered systems that help your startup predict outcomes, automate decisions, and solve complex business problems before they become expensive mistakes.',
     items: [
       'Custom Machine Learning Model Development',
@@ -265,45 +278,37 @@ useSeoMeta({
 </script>
 
 <style scoped>
-.services-hero {
-  background: linear-gradient(180deg, #0ea5e9 0%, #38bdf8 30%, #bae6fd 70%, #e0f2fe 100%);
+
+/* ── Services Hero Video ── */
+.services-hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 10, 35, 0.65) 0%,
+    rgba(3, 69, 120, 0.55) 50%,
+    rgba(2, 10, 35, 0.70) 100%
+  );
 }
-.light-ray {
-  position: absolute; top: -10%; height: 120%;
-  background: linear-gradient(180deg, rgba(255,255,255,0.5) 0%, transparent 100%);
-  border-radius: 999px; animation: rayPulse 6s ease-in-out infinite;
-}
-.ray-1 { left: 20%; transform: rotate(-15deg); width: 60px; opacity: 0.3; animation-delay: 0s; }
-.ray-2 { left: 50%; transform: rotate(5deg); width: 40px; opacity: 0.2; animation-delay: 2s; }
-.ray-3 { left: 75%; transform: rotate(20deg); width: 80px; opacity: 0.25; animation-delay: 4s; }
-@keyframes rayPulse {
-  0%, 100% { opacity: 0.1; } 50% { opacity: 0.4; }
-}
-.section-light { background: linear-gradient(180deg, #e0f2fe 0%, #f0f9ff 50%, #ecfdf5 100%); }
-.process-bg { background: linear-gradient(180deg, #ecfdf5 0%, #e0f2fe 100%); }
-.cta-bg { background: linear-gradient(135deg, #0369a1 0%, #0ea5e9 40%, #059669 100%); }
 
 .section-tag {
-  display: inline-block; background: rgba(14,165,233,0.1); color: #0369a1;
+  display: inline-block; background: rgba(14,165,233,0.1); color: white;
   font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
   padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.2); margin-bottom: 1rem;
 }
-.section-title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #0c4a6e; line-height: 1.2; margin-bottom: 1rem; text-align: center; }
-.section-sub { color: #64748b; font-size: 1.05rem; max-width: 560px; margin: 0 auto; line-height: 1.7; text-align: center; }
+.section-title { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; color: white; line-height: 1.2; margin-bottom: 1rem; text-align: center; }
+.section-sub { color: white; font-size: 1.05rem; max-width: 560px; margin: 0 auto; line-height: 1.7; text-align: center; }
 
 .page-title {
-  font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900;
-  color: #0c4a6e; line-height: 1.1; margin: 1rem 0; letter-spacing: -0.02em;
+  font-size: clamp(2.5rem, 4vw, 4.5rem); font-weight: 900;
+  color: white; line-height: 1.1; margin: 1rem 0; letter-spacing: -0.02em;
 }
 .gradient-text {
-  background: linear-gradient(90deg, #0c4a6e, #0369a1, #0ea5e9, #059669);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+background: linear-gradient(180deg, #0ea5e9 0%, #38bdf8 30%, #bae6fd 70%, #e0f2fe 100%);  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
   background-size: 200%; animation: gradientMove 4s ease infinite;
 }
 @keyframes gradientMove {
   0% { background-position: 0%; } 50% { background-position: 100%; } 100% { background-position: 0%; }
 }
-.page-sub { color: #1e40af; font-size: 1.1rem; max-width: 600px; margin: 0 auto; line-height: 1.8; opacity: 0.85; }
+.page-sub { color: white; font-size: 1.1rem; max-width: 600px; margin: 0 auto; line-height: 1.8; opacity: 0.85; }
 
 /* SERVICE ROWS */
 .service-row {
@@ -368,6 +373,126 @@ useSeoMeta({
   padding: 6px 16px; font-size: 0.8rem; font-weight: 700; color: #92400e;
 }
 
+
+/* ── Main Services Video Section ── */
+.main-services-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(2, 10, 35, 0.80) 0%,
+    rgba(3, 69, 120, 0.70) 50%,
+    rgba(2, 30, 15, 0.80) 100%
+  );
+}
+
+/* Service tag */
+.service-tag-v {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  color: #7dd3fc;
+  font-size: 0.8rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 999px;
+  border: 1px solid rgba(125,211,252,0.3);
+  margin-bottom: 1rem;
+  backdrop-filter: blur(8px);
+}
+
+/* Service heading & desc */
+.service-heading-v {
+  font-size: 2rem; font-weight: 800;
+  color: white; margin: 0.75rem 0 1rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+.service-desc-v {
+  color: rgba(255,255,255,0.75);
+  font-size: 1rem; line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Service icon */
+.service-icon-wrap-v {
+  width: 72px; height: 72px;
+  background: rgba(14,165,233,0.15);
+  border: 1px solid rgba(125,211,252,0.3);
+  border-radius: 1.25rem;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 8px 24px rgba(14,165,233,0.2);
+}
+.service-icon-el-v {
+  font-size: 2.25rem; color: #7dd3fc;
+  filter: drop-shadow(0 0 8px rgba(125,211,252,0.5));
+}
+
+/* Service list */
+.service-list-v {
+  list-style: none; padding: 0;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0.6rem; margin-bottom: 1rem;
+}
+.service-list-v li {
+  display: flex; align-items: center;
+  gap: 8px; color: rgba(255,255,255,0.85);
+  font-size: 0.9rem; font-weight: 500;
+}
+.check-icon-v {
+  color: #4ade80; font-size: 1.1rem; flex-shrink: 0;
+}
+
+/* Visual card */
+.visual-card-v {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 1.5rem; overflow: hidden;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+  transition: all 0.4s;
+}
+.visual-card-v:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+  border-color: rgba(125,211,252,0.3);
+}
+.visual-header-v {
+  background: rgba(255,255,255,0.08);
+  padding: 1rem 1.5rem;
+  display: flex; align-items: center; gap: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.visual-label-v {
+  font-size: 0.85rem; font-weight: 600;
+  color: #7dd3fc; font-family: monospace;
+}
+.visual-body-v {
+  padding: 1.5rem;
+  display: flex; flex-direction: column; gap: 1rem;
+}
+.visual-line-v {
+  display: flex; align-items: center;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(125,211,252,0.15);
+  border-radius: 0.5rem; padding: 0.75rem 1rem;
+  font-size: 0.85rem; color: #7dd3fc;
+  font-family: monospace; font-weight: 500;
+}
+.visual-badge-v {
+  margin: 0 1.5rem 1.5rem;
+  display: inline-flex; align-items: center;
+  background: rgba(254,243,199,0.15);
+  border: 1px solid rgba(252,211,77,0.3);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 0.8rem; font-weight: 700;
+  color: #fcd34d;
+}
+
+/* Dots */
+.dot { width: 12px; height: 12px; border-radius: 50%; }
+.red { background: #f87171; }
+.yellow { background: #fbbf24; }
+.green { background: #4ade80; }
+
 /* STEPS */
 .step-card {
   background: rgba(255,255,255,0.7); border: 1px solid #bae6fd;
@@ -385,6 +510,51 @@ useSeoMeta({
 .step-title { font-size: 1.1rem; font-weight: 700; color: #0c4a6e; margin-bottom: 0.5rem; }
 .step-desc { color: #64748b; font-size: 0.875rem; line-height: 1.6; }
 
+
+/* ── Service Images ── */
+.service-img-wrap {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+  transition: all 0.4s ease;
+  aspect-ratio: 4 / 3;
+}
+.service-img-wrap:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+}
+.service-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+.service-img-wrap:hover .service-img {
+  transform: scale(1.05);
+}
+.service-img-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 40%,
+    rgba(2, 10, 35, 0.7) 100%
+  );
+}
+.service-img-badge {
+  position: absolute;
+  bottom: 1.25rem; left: 1.25rem;
+  display: inline-flex; align-items: center;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 0.8rem; font-weight: 700;
+  color: white;
+  backdrop-filter: blur(12px);
+}
+
+
 /* ADDONS */
 .addon-card {
   background: rgba(255,255,255,0.7); border: 1px solid #bae6fd;
@@ -396,17 +566,24 @@ useSeoMeta({
 .addon-title { font-size: 1rem; font-weight: 700; color: #0c4a6e; margin-bottom: 0.5rem; }
 .addon-desc { color: #64748b; font-size: 0.875rem; line-height: 1.6; }
 
-/* CTA */
-.cta-orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.3; }
-.orb-1 { width: 400px; height: 400px; background: white; top: -100px; left: -100px; }
-.orb-2 { width: 300px; height: 300px; background: #86efac; bottom: -50px; right: -50px; }
-.cta-btn-white { background: white !important; color: #0369a1 !important; font-weight: 700; transition: all 0.3s; }
-.cta-btn-white:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,0.2); }
-
-/* ANIMATIONS */
-@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
-.animate-fade-in-down { animation: fadeInDown 0.8s ease both; }
-.animate-fade-in-up { animation: fadeInUp 0.8s ease 0.2s both; }
-.animate-fade-in-up-delay { animation: fadeInUp 0.8s ease 0.4s both; }
+/* ── Services CTA Video ── */
+.services-cta-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 10, 35, 0.80) 0%,
+    rgba(3, 69, 120, 0.70) 50%,
+    rgba(2, 10, 35, 0.85) 100%
+  );
+}
+.cta-btn-white {
+  background: white !important;
+  color: #0369a1 !important;
+  font-weight: 700;
+  transition: all 0.3s;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+.cta-btn-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+}
 </style>

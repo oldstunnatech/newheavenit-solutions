@@ -3,16 +3,31 @@
 
     <!-- HERO -->
     <!-- WHO WE ARE -->
-<section class="py-24 px-6 section-light">
-  <div class="max-w-6xl mx-auto">
+<section class="relative py-24 px-6 overflow-hidden">
+
+  <!-- Background video -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    src="/28115-367748176.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+    preload="auto"
+  />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 z-1 who-video-overlay" />
+
+  <div class="relative z-10 max-w-6xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
       <!-- Text -->
       <div>
-        <span class="section-tag">Who We Are</span>
-        <h2 class="section-title text-left">
+        <span class="who-tag">Who We Are</span>
+        <h2 class="who-title">
           Not an agency.<br/>
-          <span class="gradient-text">A dedicated partner.</span>
+          <span class="who-gradient-text">A dedicated partner.</span>
         </h2>
         <div class="who-text space-y-4">
           <p>
@@ -22,7 +37,7 @@
           <p>
             We were founded on a single frustration: too many startups and
             small businesses were being forced to choose between building a
-            product and understanding their data between moving fast and
+            product and understanding their data — between moving fast and
             moving smart. We built NewHeaven to end that trade-off.
           </p>
           <p>
@@ -43,36 +58,48 @@
         </UButton>
       </div>
 
-      <!-- Visual -->
+      <!-- Visual card -->
       <div class="who-visual">
-        <div class="who-card">
-          <div class="who-card-row">
-            <Icon name="ph:map-pin-fill" class="text-sky-500" />
+        <div class="who-card-v">
+          <div class="who-card-row-v">
+            <div class="who-row-icon">
+              <Icon name="ph:map-pin-fill" class="text-sky-300" />
+            </div>
             <span>Founded in Nigeria, serving the world</span>
           </div>
-          <div class="who-divider" />
-          <div class="who-card-row">
-            <Icon name="ph:buildings-fill" class="text-sky-500" />
+          <div class="who-divider-v" />
+          <div class="who-card-row-v">
+            <div class="who-row-icon">
+              <Icon name="ph:buildings-fill" class="text-sky-300" />
+            </div>
             <span>Launched in 2026</span>
           </div>
-          <div class="who-divider" />
-          <div class="who-card-row">
-            <Icon name="ph:stack-fill" class="text-sky-500" />
+          <div class="who-divider-v" />
+          <div class="who-card-row-v">
+            <div class="who-row-icon">
+              <Icon name="ph:stack-fill" class="text-sky-300" />
+            </div>
             <span>4 core services under one roof</span>
           </div>
-          <div class="who-divider" />
-          <div class="who-card-row">
-            <Icon name="ph:globe-fill" class="text-sky-500" />
+          <div class="who-divider-v" />
+          <div class="who-card-row-v">
+            <div class="who-row-icon">
+              <Icon name="ph:globe-fill" class="text-sky-300" />
+            </div>
             <span>Remote — available worldwide</span>
           </div>
-          <div class="who-divider" />
-          <div class="who-card-row">
-            <Icon name="ph:user-fill" class="text-sky-500" />
+          <div class="who-divider-v" />
+          <div class="who-card-row-v">
+            <div class="who-row-icon">
+              <Icon name="ph:user-fill" class="text-sky-300" />
+            </div>
             <span>One partner, full accountability</span>
           </div>
-          <div class="who-divider" />
-          <div class="who-card-row">
-            <Icon name="ph:check-circle-fill" class="text-green-500" />
+          <div class="who-divider-v" />
+          <div class="who-card-row-v">
+            <div class="who-row-icon">
+              <Icon name="ph:check-circle-fill" class="text-green-400" />
+            </div>
             <span>100% client satisfaction rate</span>
           </div>
         </div>
@@ -85,53 +112,80 @@
 
     <!-- STORY SECTION -->
     <!-- MISSION, VISION & GOALS -->
-<section class="py-24 px-6 mv-bg">
-  <div class="max-w-6xl mx-auto">
+<section class="relative py-24 px-6 overflow-hidden">
+
+  <!-- Background video -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    src="/144555-784867402.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+    preload="auto"
+  />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 z-1 mv-video-overlay" />
+
+  <div class="relative z-10 max-w-6xl mx-auto">
     <div class="text-center mb-16">
-      <span class="section-tagf">Our Foundation</span>
-      <h2 class="section-title">What drives us</h2>
-      <p class="section-sub"></p>
+      <span class="mv-video-tag">Our Foundation</span>
+      <h2 class="mv-video-title">What drives us</h2>
     </div>
 
     <!-- Mission & Vision -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
 
       <!-- Mission -->
-      <div class="mv-card">
-        <div class="mv-icon-wrap">
-          <Icon name="ph:compass-fill" class="mv-icon-el" />
+      <div class="mv-card-v">
+        <div class="mv-icon-wrap-v">
+          <Icon name="ph:globe-fill" class="mv-icon-el-v" />
         </div>
-        <span class="mv-label">Mission</span>
-        <h3 class="mv-heading">To make world-class technology accessible to every freelancer, startup, and growing business.</h3>
-        <p class="mv-text">
-          NewHeaven IT Solutions exists because great technology should not be a privilege reserved
-          for large corporations with big budgets. We bridge the gap between complex technology and
-          real business outcomes by combining professional website development, intelligent data mining,
-          actionable data analytics, and machine learning under one roof with one partner, one point
-          of accountability, and zero compromise on quality.
+        <span class="mv-label-v">Mission</span>
+        <h3 class="mv-heading-v">
+          To make world-class technology accessible to every freelancer,
+          startup, and growing business.
+        </h3>
+        <p class="mv-text-v">
+          NewHeaven IT Solutions exists because great technology should not
+          be a privilege reserved for large corporations with big budgets.
+          We bridge the gap between complex technology and real business
+          outcomes by combining professional website development, intelligent
+          data mining, actionable data analytics, and machine learning under
+          one roof — with one partner, one point of accountability, and zero
+          compromise on quality.
         </p>
-        <p class="mv-text mv-highlight">We don't just deliver projects. We deliver growth.</p>
+        <p class="mv-text-v mv-highlight-v">
+          We don't just deliver projects. We deliver growth.
+        </p>
       </div>
 
       <!-- Vision -->
-      <div class="mv-card">
-        <div class="mv-icon-wrap">
-          <Icon name="ph:telescope-fill" class="mv-icon-el" />
+      <div class="mv-card-v">
+        <div class="mv-icon-wrap-v">
+          <Icon name="ph:binoculars-fill" class="mv-icon-el-v" />
         </div>
-        <span class="mv-label">Vision</span>
-        <h3 class="mv-heading">To become the most trusted technology partner for startups across Africa and beyond.</h3>
-        <p class="mv-text">
-          We see a future where every ambitious entrepreneur from Lagos to London, from Abuja to
-          Amsterdam has access to the same level of technical expertise that was once only available
-          to well-funded companies with large teams.
+        <span class="mv-label-v">Vision</span>
+        <h3 class="mv-heading-v">
+          To become the most trusted technology partner for startups
+          across Africa and beyond.
+        </h3>
+        <p class="mv-text-v">
+          We see a future where every ambitious entrepreneur from Lagos to
+          London, from Abuja to Amsterdam has access to the same level of
+          technical expertise that was once only available to well-funded
+          companies with large teams.
         </p>
-        <p class="mv-text">
-          NewHeaven IT Solutions is built to change that reality. One website, one dashboard, one
-          machine learning model at a time - we are proving that world-class digital products can be
-          conceived, built, and delivered from Nigeria, for the world.
+        <p class="mv-text-v">
+          NewHeaven IT Solutions is built to change that reality. One
+          website, one dashboard, one machine learning model at a time —
+          we are proving that world-class digital products can be conceived,
+          built, and delivered from Nigeria, for the world.
         </p>
-        <p class="mv-text mv-highlight">
-          Elevating Business Beyond the Horizon - not as a tagline, but as a daily commitment.
+        <p class="mv-text-v mv-highlight-v">
+          Elevating Business Beyond the Horizon — not as a tagline,
+          but as a daily commitment.
         </p>
       </div>
     </div>
@@ -139,111 +193,111 @@
     <!-- Goals -->
     <div class="goals-section">
       <div class="text-center mb-10">
-        <span class="section-tagw">Where We're Headed</span>
-        <h3 class="section-title">Our Goals</h3>
+        <span class="mv-video-tag">Where We're Headed</span>
+        <h3 class="mv-video-title">Our Goals</h3>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
         <!-- Short term -->
-        <div class="goal-card">
-          <div class="goal-header">
-            <div class="goal-icon-wrap">
-              <Icon name="ph:rocket-launch-fill" class="goal-icon" />
+        <div class="goal-card-v">
+          <div class="goal-header-v">
+            <div class="goal-icon-wrap-v">
+              <Icon name="ph:rocket-launch-fill" class="goal-icon-v" />
             </div>
             <div>
-              <span class="goal-period">2026</span>
-              <h4 class="goal-title">Short-Term</h4>
+              <span class="goal-period-v">2026</span>
+              <h4 class="goal-title-v">Short-Term</h4>
             </div>
           </div>
-          <ul class="goal-list">
+          <ul class="goal-list-v">
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Deliver 20+ successful projects across all 4 service areas
             </li>
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Build 5 detailed case studies showing real business impact
             </li>
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Establish strong presence on LinkedIn & Nigerian startup communities
             </li>
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Achieve 100% client satisfaction on every delivered project
             </li>
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Launch a bundled "Website + Analytics" package for startups
             </li>
           </ul>
         </div>
 
         <!-- Mid term -->
-        <div class="goal-card goal-card-featured">
-          <div class="goal-header">
-            <div class="goal-icon-wrap">
-              <Icon name="ph:chart-line-up-fill" class="goal-icon" />
+        <div class="goal-card-v goal-card-featured-v">
+          <div class="goal-header-v">
+            <div class="goal-icon-wrap-v">
+              <Icon name="ph:chart-line-up-fill" class="goal-icon-v" />
             </div>
             <div>
-              <span class="goal-period">2027–2028</span>
-              <h4 class="goal-title">Mid-Term</h4>
+              <span class="goal-period-v">2027–2028</span>
+              <h4 class="goal-title-v">Mid-Term</h4>
             </div>
           </div>
-          <ul class="goal-list">
+          <ul class="goal-list-v">
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Grow into a small trusted team of 2–3 specialists
             </li>
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Serve clients across at least 5 different countries
             </li>
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Develop a signature data product from client work patterns
             </li>
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Build retained relationships with 10+ ongoing business partners
             </li>
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Be featured in a notable African tech publication
             </li>
           </ul>
         </div>
 
         <!-- Long term -->
-        <div class="goal-card">
-          <div class="goal-header">
-            <div class="goal-icon-wrap">
-              <Icon name="ph:trophy-fill" class="goal-icon" />
+        <div class="goal-card-v">
+          <div class="goal-header-v">
+            <div class="goal-icon-wrap-v">
+              <Icon name="ph:trophy-fill" class="goal-icon-v" />
             </div>
             <div>
-              <span class="goal-period">2028–2030</span>
-              <h4 class="goal-title">Long-Term</h4>
+              <span class="goal-period-v">2028–2030</span>
+              <h4 class="goal-title-v">Long-Term</h4>
             </div>
           </div>
-          <ul class="goal-list">
+          <ul class="goal-list-v">
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
-              Become the go to boutique tech studio for African startups
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
+              Become the go-to boutique tech studio for African startups
             </li>
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Launch at least one internal SaaS product
             </li>
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Build a reputation driven entirely by client referrals
             </li>
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Mentor early-stage developers and data scientists in Nigeria
             </li>
             <li>
-              <Icon name="ph:check-circle-fill" class="goal-check" />
+              <Icon name="ph:check-circle-fill" class="goal-check-v" />
               Prove world-class technical work can be built from Nigeria
             </li>
           </ul>
@@ -253,86 +307,55 @@
     </div>
   </div>
 </section>
-
    
 
     <!-- CTA -->
-    <section class="relative py-32 px-6 cta-bg overflow-hidden">
-      <div class="cta-orb orb-1" />
-      <div class="cta-orb orb-2" />
-      <div class="relative z-10 max-w-3xl mx-auto text-center">
-        <Icon name="ph:paper-plane-tilt-fill" class="text-yellow-300 mb-6" style="font-size:3rem" />
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-          Ready to Build <br />Something Great?
-        </h2>
-        <p class="text-sky-100 text-lg mb-10">
-          Whether you have a project in mind or just want to explore possibilities
-          we'd love to hear from you.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <UButton to="/contact" size="xl" class="cta-btn-white">
-            <Icon name="ph:chat-circle-dots-fill" class="mr-2" /> Contact Us
-          </UButton>
-          <UButton to="/services" size="xl" variant="outline" class="cta-btn-outline">
-            <Icon name="ph:list-bullets-fill" class="mr-2" /> View Solutions
-          </UButton>
-        </div>
-      </div>
-    </section>
+   <section class="relative py-32 px-6 overflow-hidden">
+
+  <!-- Background video -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    src="/22183-712840599.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+    preload="auto"
+  />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 z-1 about-cta-overlay" />
+
+  <div class="relative z-10 max-w-3xl mx-auto text-center">
+    <Icon
+      name="ph:paper-plane-tilt-fill"
+      class="text-yellow-300 mb-6"
+      style="font-size:3rem; filter: drop-shadow(0 0 20px rgba(252,211,77,0.7))"
+    />
+    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6"
+      style="text-shadow: 0 2px 30px rgba(0,0,0,0.4)">
+      Ready to Build <br />Something Great?
+    </h2>
+    <p class="text-sky-100 text-lg mb-10 opacity-90">
+      Whether you have a project in mind or just want to explore possibilities
+      — we'd love to hear from you.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <UButton to="/contact" size="xl" class="cta-btn-white">
+        <Icon name="ph:chat-circle-dots-fill" class="mr-2" /> Contact Us
+      </UButton>
+      <UButton to="/services" size="xl" variant="outline" class="cta-btn-outline">
+        <Icon name="ph:list-bullets-fill" class="mr-2" /> View Solutions
+      </UButton>
+    </div>
+  </div>
+
+</section>
 
   </div>
 </template>
 
 <script setup lang="ts">
-
-const skillGroups = [
-  {
-    icon: 'ph:code-fill',
-    title: 'Frontend & Fullstack',
-    skills: [
-      { icon: 'logos:vue', name: 'Vue.js / Nuxt', level: 95 },
-      { icon: 'logos:typescript-icon', name: 'TypeScript', level: 90 },
-      { icon: 'logos:tailwindcss-icon', name: 'Tailwind CSS', level: 92 },
-      { icon: 'logos:nodejs-icon', name: 'Node.js', level: 88 },
-    ],
-  },
-  {
-    icon: 'ph:database-fill',
-    title: 'Data & Backend',
-    skills: [
-      { icon: 'logos:python', name: 'Python', level: 93 },
-      { icon: 'logos:django', name: 'Django', level: 93 },
-      { icon: 'logos:postgresql', name: 'PostgreSQL', level: 87 },
-      { icon: 'logos:supabase-icon', name: 'Supabase', level: 90 },
-      { icon: 'logos:docker-icon', name: 'Docker', level: 80 },
-    ],
-  },
-  {
-    icon: 'ph:brain-fill',
-    title: 'AI & Data Science',
-    skills: [
-      { icon: 'simple-icons:scikitlearn', name: 'Scikit-Learn', level: 85 },
-      { icon: 'ph:chart-bar-fill', name: 'Data Analysis', level: 92 },
-      { icon: 'ph:robot-fill', name: 'Machine Learning', level: 88 },
-      { icon: 'ph:graph-fill', name: 'Data Visualization', level: 90 },
-    ],
-  },
-]
-
-const values = [
-  { icon: 'ph:target-fill', title: 'Results First', desc: 'Every decision is made with your business outcomes in mind.' },
-  { icon: 'ph:lightbulb-fill', title: 'Innovation', desc: 'Staying ahead of trends to deliver future-proof solutions.' },
-  { icon: 'ph:handshake-fill', title: 'Integrity', desc: 'Honest communication and transparent processes always.' },
-  { icon: 'ph:rocket-launch-fill', title: 'Excellence', desc: 'High standards in everything from code quality to delivery.' },
-]
-
-const milestones = [
-  { year: '2024', icon: 'ph:graduation-cap-fill', title: 'Started the Journey', desc: 'Began fullstack development and data science studies with a focus on real-world applications.' },
-  { year: '2025', icon: 'ph:briefcase-fill', title: 'Graduated Tech School', desc: 'Delivered 10+ projects for portfolio building and real-world practice across multiple industries.' },
-  { year: '2026', icon: 'ph:building-office-fill', title: 'NewHeaven Founded', desc: 'Officially launched Newheaven IT Solutions to scale impact and serve more businesses.' },
-  { year: '2027', icon: 'ph:trophy-fill', title: 'Growing Strong', desc: '50+ projects aimed, expanding into AI/ML services and enterprise solutions.' },
-]
-
 useSeoMeta({
   title: 'About NewHeaven IT Solutions',
   description: 'Learn about NewHeaven IT Solutions a fullstack development, data analysis, and AI company built to grow your business.',
@@ -535,174 +558,277 @@ useSeoMeta({
 .timeline-desc { color: #64748b; font-size: 0.85rem; line-height: 1.6; }
 
 /* CTA */
-.cta-orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.3; }
-.orb-1 { width: 400px; height: 400px; background: white; top: -100px; left: -100px; }
-.orb-2 { width: 300px; height: 300px; background: #86efac; bottom: -50px; right: -50px; }
-.cta-btn-white { background: white !important; color: #0369a1 !important; font-weight: 700; transition: all 0.3s; }
-.cta-btn-white:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,0.2); }
-.cta-btn-outline { border-color: white !important; color: white !important; transition: all 0.3s; }
-.cta-btn-outline:hover { background: rgba(255,255,255,0.1) !important; transform: translateY(-3px); }
-
-@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
-.animate-fade-in-down { animation: fadeInDown 0.8s ease both; }
-.animate-fade-in-up { animation: fadeInUp 0.8s ease 0.2s both; }
-.animate-fade-in-up-delay { animation: fadeInUp 0.8s ease 0.4s both; }
 
 
-/* ── MISSION & VISION ── */
-.mv-bg {
-  background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 50%, #ecfdf5 100%);
+/* ── Who We Are Video Section ── */
+.who-video-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(2, 10, 35, 0.78) 0%,
+    rgba(3, 69, 120, 0.68) 50%,
+    rgba(2, 10, 35, 0.78) 100%
+  );
 }
-.mv-card {
-  background: rgba(255,255,255,0.85);
-  border: 1px solid #bae6fd;
-  border-radius: 1.5rem;
-  padding: 2.5rem;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px rgba(14,165,233,0.08);
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
+
+/* Tag */
+.who-tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  color: white;
+  font-size: 0.8rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 999px;
+  border: 1px solid rgba(125,211,252,0.3);
+  margin-bottom: 1rem;
+  backdrop-filter: blur(8px);
+  margin-left: 85px;
+  margin-top: 15px;
 }
-.mv-card::before {
+
+/* Title */
+.who-title {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800; color: white;
+  line-height: 1.2; margin-bottom: 1.5rem;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+.who-gradient-text {
+  background: linear-gradient(90deg, #7dd3fc, #4ade80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Body text */
+.who-text p {
+  color: white;
+  font-size: 1rem; line-height: 1.8;
+}
+.who-highlight {
+  color: #7dd3fc !important;
+  font-weight: 600;
+  border-left: 3px solid rgba(125,211,252,0.5);
+  padding-left: 0.75rem;
+  font-style: italic;
+}
+
+/* Who card */
+.who-card-v {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 1.5rem; padding: 2rem;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+.who-card-row-v {
+  display: flex; align-items: center; gap: 1rem;
+  font-size: 0.95rem; font-weight: 500;
+  color: rgba(255,255,255,0.85);
+  padding: 0.6rem 0;
+}
+.who-row-icon {
+  width: 36px; height: 36px;
+  background: rgba(14,165,233,0.15);
+  border: 1px solid rgba(125,211,252,0.2);
+  border-radius: 0.6rem;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-size: 1rem;
+}
+.who-divider-v {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  margin: 0.25rem 0;
+}
+
+
+/* ── Mission Vision Video Section ── */
+.mv-video-overlay {
+  background: linear-gradient(
+    160deg,
+    rgba(2, 10, 35, 0.82) 0%,
+    rgba(3, 69, 120, 0.72) 50%,
+    rgba(2, 30, 15, 0.82) 100%
+  );
+}
+
+.mv-video-tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  color: #7dd3fc;
+  font-size: 0.8rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 6px 18px; border-radius: 999px;
+  border: 1px solid rgba(125,211,252,0.3);
+  margin-bottom: 1rem;
+  backdrop-filter: blur(8px);
+}
+.mv-video-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800; color: white;
+  line-height: 1.2; margin-bottom: 1rem;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* Mission & Vision cards */
+.mv-card-v {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 1.5rem; padding: 2.5rem;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  position: relative; overflow: hidden;
+}
+.mv-card-v::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 3px;
+  height: 2px;
   background: linear-gradient(90deg, #0369a1, #0ea5e9, #059669);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.4s ease;
+  transition: transform 0.3s ease;
 }
-.mv-card:hover::before { transform: scaleX(1); }
-.mv-card:hover {
+.mv-card-v:hover::before { transform: scaleX(1); }
+.mv-card-v:hover {
+  background: rgba(255,255,255,0.11);
   transform: translateY(-6px);
-  box-shadow: 0 24px 50px rgba(14,165,233,0.14);
+  box-shadow: 0 24px 50px rgba(0,0,0,0.3);
 }
-.mv-icon-wrap {
+.mv-icon-wrap-v {
   width: 60px; height: 60px;
-  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+  background: rgba(14,165,233,0.15);
+  border: 1px solid rgba(125,211,252,0.3);
   border-radius: 1rem;
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 1.25rem;
   box-shadow: 0 4px 16px rgba(14,165,233,0.2);
 }
-.mv-icon-el { font-size: 1.75rem; color: #0369a1; }
-.mv-label {
+.mv-icon-el-v {
+  font-size: 1.75rem; color: #7dd3fc;
+  filter: drop-shadow(0 0 8px rgba(125,211,252,0.5));
+}
+.mv-label-v {
   display: block;
   font-size: 0.75rem; font-weight: 700;
   letter-spacing: 0.12em; text-transform: uppercase;
-  color: #0369a1; margin-bottom: 0.75rem;
+  color: #7dd3fc; margin-bottom: 0.75rem;
 }
-.mv-heading {
-  font-size: 1.2rem; font-weight: 800;
-  color: #0c4a6e; line-height: 1.4;
+.mv-heading-v {
+  font-size: 1.15rem; font-weight: 800;
+  color: white; line-height: 1.4;
   margin-bottom: 1rem;
 }
-.mv-text {
-  color: #475569; font-size: 0.95rem;
-  line-height: 1.8; margin-bottom: 0.75rem;
+.mv-text-v {
+  color: rgba(255,255,255,0.72);
+  font-size: 0.95rem; line-height: 1.8;
+  margin-bottom: 0.75rem;
 }
-.mv-text:last-child { margin-bottom: 0; }
-.mv-highlight {
-  color: #0369a1 !important;
-  font-weight: 600;
-  font-style: italic;
-  border-left: 3px solid #0ea5e9;
+.mv-text-v:last-child { margin-bottom: 0; }
+.mv-highlight-v {
+  color: #7dd3fc !important;
+  font-weight: 600; font-style: italic;
+  border-left: 3px solid rgba(125,211,252,0.5);
   padding-left: 0.75rem;
   margin-top: 1rem;
 }
 
-/* ── GOALS ── */
-.goal-card {
-  background: rgba(255,255,255,0.8);
-  border: 1px solid #bae6fd;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  transition: all 0.3s;
+/* Goal cards */
+.goal-card-v {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 1.5rem; padding: 2rem;
+  backdrop-filter: blur(14px);
+  transition: all 0.3s ease;
 }
-.goal-card:hover {
+.goal-card-v:hover {
+  background: rgba(255,255,255,0.12);
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(14,165,233,0.12);
-  border-color: #38bdf8;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  border-color: rgba(125,211,252,0.3);
 }
-.goal-card-featured {
-  background: linear-gradient(135deg, #0369a1, #0ea5e9);
-  border-color: transparent;
+.goal-card-featured-v {
+  background: rgba(3,105,161,0.25);
+  border-color: rgba(125,211,252,0.3);
+  box-shadow: 0 8px 32px rgba(14,165,233,0.2);
 }
-.goal-card-featured .goal-icon-wrap {
-  background: rgba(255,255,255,0.2);
+.goal-card-featured-v:hover {
+  background: rgba(3,105,161,0.35);
 }
-.goal-card-featured .goal-icon { color: white; }
-.goal-card-featured .goal-period { color: rgba(255,255,255,0.7); }
-.goal-card-featured .goal-title { color: white; }
-.goal-card-featured .goal-list li { color: rgba(255,255,255,0.9); }
-.goal-card-featured .goal-check { color: #86efac; }
-
-.goal-header {
-  display: flex; align-items: center; gap: 1rem;
-  margin-bottom: 1.5rem;
+.goal-header-v {
+  display: flex; align-items: center;
+  gap: 1rem; margin-bottom: 1.5rem;
 }
-.goal-icon-wrap {
+.goal-icon-wrap-v {
   width: 52px; height: 52px;
-  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+  background: rgba(14,165,233,0.15);
+  border: 1px solid rgba(125,211,252,0.25);
   border-radius: 1rem;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
 }
-.goal-icon { font-size: 1.5rem; color: #0369a1; }
-.goal-period {
+.goal-icon-v {
+  font-size: 1.5rem; color: #7dd3fc;
+  filter: drop-shadow(0 0 6px rgba(125,211,252,0.4));
+}
+.goal-period-v {
   display: block;
   font-size: 0.7rem; font-weight: 700;
   letter-spacing: 0.1em; text-transform: uppercase;
-  color: #0369a1; margin-bottom: 0.2rem;
+  color: #7dd3fc; margin-bottom: 0.2rem;
 }
-.goal-title {
+.goal-title-v {
   font-size: 1.1rem; font-weight: 800;
-  color: #0c4a6e; line-height: 1.2;
+  color: white; line-height: 1.2;
 }
-.goal-list {
+.goal-list-v {
   list-style: none; padding: 0;
   display: flex; flex-direction: column; gap: 0.75rem;
 }
-.goal-list li {
-  display: flex; align-items: flex-start; gap: 0.6rem;
-  color: #334155; font-size: 0.875rem; line-height: 1.5;
+.goal-list-v li {
+  display: flex; align-items: flex-start;
+  gap: 0.6rem;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.875rem; line-height: 1.5;
 }
-.goal-check {
-  color: #0ea5e9; font-size: 1rem;
+.goal-check-v {
+  color: #4ade80; font-size: 1rem;
   flex-shrink: 0; margin-top: 2px;
 }
 
-.who-text p { color: #475569; font-size: 1rem; line-height: 1.8; }
-.who-highlight {
+/* ── About CTA Video ── */
+.about-cta-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 10, 35, 0.80) 0%,
+    rgba(3, 69, 120, 0.70) 50%,
+    rgba(2, 10, 35, 0.85) 100%
+  );
+}
+.cta-btn-white {
+  background: white !important;
   color: #0369a1 !important;
-  font-weight: 600;
-  border-left: 3px solid #0ea5e9;
-  padding-left: 0.75rem;
-  font-style: italic;
+  font-weight: 700;
+  transition: all 0.3s;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
 }
-.who-visual { display: flex; justify-content: center; }
-.who-card {
-  background: rgba(255,255,255,0.9);
-  border: 1px solid #bae6fd;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  width: 100%; max-width: 340px;
-  box-shadow: 0 20px 50px rgba(14,165,233,0.12);
-  animation: float 4s ease-in-out infinite;
+.cta-btn-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
 }
-.who-card-row {
-  display: flex; align-items: center; gap: 0.75rem;
-  font-size: 0.9rem; font-weight: 500; color: #334155;
-  padding: 0.5rem 0;
+.cta-btn-outline {
+  border-color: rgba(255,255,255,0.5) !important;
+  color: white !important;
+  background: rgba(255,255,255,0.08) !important;
+  transition: all 0.3s;
 }
-.who-divider {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #bae6fd, transparent);
-  margin: 0.25rem 0;
+.cta-btn-outline:hover {
+  background: rgba(255,255,255,0.18) !important;
+  border-color: white !important;
+  transform: translateY(-3px);
 }
+
 
 
 @media (max-width: 480px) {
@@ -733,6 +859,28 @@ useSeoMeta({
   padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(14,165,233,0.2); margin-bottom: 1rem;
   margin-left: 10px;
 }
+
+.who-tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  color: white;
+  font-size: 0.8rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 999px;
+  border: 1px solid rgba(125,211,252,0.3);
+  margin-bottom: 1rem;
+  backdrop-filter: blur(8px);
+  margin-left: 100px;
+  
+}
+.who-title {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800; color: white;
+  line-height: 1.2; margin-bottom: 1.5rem;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  margin-left: 25px;
+}
+
 }
 
 </style>

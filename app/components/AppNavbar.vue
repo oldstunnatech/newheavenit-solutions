@@ -3,7 +3,7 @@ const links = [
   { label: 'Home', to: '/', icon: 'ph:house-fill' },
   { label: 'Solutions', to: '/services', icon: 'ph:stack-fill' },
   { label: 'About', to: '/about', icon: 'ph:info-fill' },
-  { label: 'Blog', to: '/blog', icon: 'ph:newspaper-fill' },
+  // { label: 'Blog', to: '/blog', icon: 'ph:newspaper-fill' },
   { label: 'Contact', to: '/contact', icon: 'ph:envelope-fill' },
 ]
 

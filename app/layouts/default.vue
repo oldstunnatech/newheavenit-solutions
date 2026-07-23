@@ -8,3 +8,40 @@
     <AppFooter />
   </div>
 </template>
+
+<script setup lang="ts">
+import { onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const playAllVideos = () => {
+  // Try immediately
+  triggerPlay()
+  // Try again after 300ms
+  setTimeout(triggerPlay, 300)
+  // Try again after 800ms as final fallback
+  setTimeout(triggerPlay, 800)
+}
+
+const triggerPlay = () => {
+  const videos = document.querySelectorAll<HTMLVideoElement>('video')
+  videos.forEach((video) => {
+    video.muted = true
+    if (video.paused) {
+      video.load()
+      video.play().catch(() => {})
+    }
+  })
+}
+
+// Run on first load
+onMounted(() => {
+  playAllVideos()
+})
+
+// Run every time the route path changes
+watch(() => route.path, () => {
+  playAllVideos()
+})
+</script>

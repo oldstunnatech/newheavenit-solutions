@@ -4,234 +4,165 @@
     <!-- HERO SECTION -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
 
-      <!-- Deep heaven layered background -->
-      <div class="absolute inset-0 heaven-bg" />
+  <!-- Background video -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    src="/28115-367748176.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+    preload="auto"
+  />
 
-      <!-- Aurora layer -->
-      <div class="absolute inset-0 aurora-layer" />
+  <!-- Dark overlay so text stays readable -->
+  <div class="absolute inset-0 z-1 hero-overlay" />
 
-      <!-- Stars layer -->
-      <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div v-for="i in 60" :key="`star-${i}`" class="star" :style="starStyle(i)" />
-      </div>
+  <!-- Hero content -->
+  <div class="relative z-10 max-w-5xl mx-auto px-6 text-center pt-24">
 
-      <!-- Divine light beams -->
-      <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="beam beam-1" />
-        <div class="beam beam-2" />
-        <div class="beam beam-3" />
-        <div class="beam beam-4" />
-        <div class="beam beam-5" />
-      </div>
+    <div class="badge-pill animate-fade-in-down">
+      <span class="pulse-dot" />
+      <span>Now Accepting New Clients</span>
+      <span class="pulse-dot" />
+    </div>
 
-      <!-- Deep background clouds (slowest, darkest) -->
-      <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="cloud-layer cloud-bg-1">
-          <Icon name="ph:cloud-fill" style="font-size:12rem; color: rgba(30,58,138,0.5)" />
-        </div>
-        <div class="cloud-layer cloud-bg-2">
-          <Icon name="ph:cloud-fill" style="font-size:8rem; color: rgba(30,58,138,0.4)" />
-        </div>
-        <div class="cloud-layer cloud-bg-3">
-          <Icon name="ph:cloud-fill" style="font-size:15rem; color: rgba(23,37,84,0.35)" />
-        </div>
-      </div>
+    <h1 class="hero-title animate-fade-in-up">
+      <span class="block hero-line-1 mb-3">NewHeaven IT</span>
+      <span class="block gradient-text">Solutions</span>
+    </h1>
 
-      <!-- Mid clouds (medium speed, medium tone) -->
-      <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="cloud-layer cloud-mid-1">
-          <Icon name="ph:cloud-fill" style="font-size:7rem; color: rgba(56,189,248,0.3)" />
-        </div>
-        <div class="cloud-layer cloud-mid-2">
-          <Icon name="ph:cloud-sun-fill" style="font-size:5rem; color: rgba(125,211,252,0.35)" />
-        </div>
-        <div class="cloud-layer cloud-mid-3">
-          <Icon name="ph:cloud-fill" style="font-size:9rem; color: rgba(56,189,248,0.25)" />
-        </div>
-      </div>
+    <!-- Motto -->
+    <p class="hero-motto animate-fade-in-up-delay">
+      Elevating Business Beyond the Horizon
+    </p>
 
-      <!-- Foreground clouds (fastest, lightest) -->
-      <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="cloud-layer cloud-fg-1">
-          <Icon name="ph:cloud-fill" style="font-size:4rem; color: rgba(255,255,255,0.4)" />
-        </div>
-        <div class="cloud-layer cloud-fg-2">
-          <Icon name="ph:cloud-fill" style="font-size:3rem; color: rgba(255,255,255,0.3)" />
-        </div>
-      </div>
+    <!-- Subheading -->
+    <p class="hero-sub animate-fade-in-up-delay2">
+      From professional websites to data analytics, data mining, and machine
+      learning solutions — we give freelancers and businesses across Nigeria
+      and the world the tools to grow smarter and compete stronger.
+    </p>
 
-      <!-- Floating orbs for depth -->
-      <div class="orb orb-1" />
-      <div class="orb orb-2" />
-      <div class="orb orb-3" />
-      <div class="orb orb-4" />
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 animate-fade-in-up-delay2">
+      <UButton to="/services" size="xl" color="primary" variant="solid" class="hero-btn-primary">
+        <Icon name="ph:sparkle-fill" class="mr-2" /> Explore Solutions
+      </UButton>
+      <UButton to="/contact" size="xl" variant="outline" class="hero-btn-outline">
+        <Icon name="ph:rocket-launch-fill" class="mr-2" /> Let's talk
+      </UButton>
+    </div>
 
-      <!-- Hero content -->
-      <div class="relative z-10 max-w-5xl mx-auto px-6 text-center pt-24">
+  </div>
 
-        <div class="badge-pill animate-fade-in-down">
-  <span class="pulse-dot" />
-  <span>Welcome To</span><span class="pulse-dot" />
-</div>
+  <!-- Scroll indicator -->
+  <!-- <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-indicator">
+    <div class="scroll-mouse">
+      <div class="scroll-wheel" />
+    </div>
+  </div> -->
 
-<h1 class="hero-title animate-fade-in-up">
-  <span class="block hero-line-1 mb-3">NewHeaven IT</span>
-  <span class="block gradient-text">Solutions</span>
-</h1>
-
-<!-- Motto — styled differently from subheading -->
-<p class="hero-motto animate-fade-in-up-delay">
-  Elevating Business Beyond the Horizon
-</p>
-
-<!-- Subheading — expands on the motto -->
-<p class="hero-sub animate-fade-in-up-delay2">
-  From professional websites to data analytics, data mining, and machine learning solutions we give freelancers and businesses across Nigeria and the world the tools to grow smarter and compete stronger.
-</p>
-
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 animate-fade-in-up-delay2">
-          <UButton to="/services" size="xl" color="primary" variant="solid" class="hero-btn-primary">
-            <Icon name="ph:sparkle-fill" class="mr-2" /> Explore Solutions
-          </UButton>
-          <UButton to="/contact" size="xl" variant="outline" class="hero-btn-outline">
-            <Icon name="ph:rocket-launch-fill" class="mr-2" /> Let's talk
-          </UButton>
-        </div>
-
-        <!-- Stats with 3D depth -->
-        <!-- <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 animate-fade-in-up-delay3">
-          <div v-for="(stat, i) in stats" :key="stat.label"
-            class="stat-card" :style="`animation-delay: ${0.8 + i * 0.1}s`">
-            <Icon :name="stat.icon" class="stat-icon-el" />
-            <div class="stat-value">{{ stat.value }}</div>
-            <div class="stat-label">{{ stat.label }}</div>
-          </div>
-        </div> -->
-      </div>
-
-      <!-- Scroll indicator -->
-      <!-- <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-indicator">
-        <div class="scroll-mouse">
-          <div class="scroll-wheel" />
-        </div>
-      </div> -->
-    </section>
+</section>
 
 
     <!-- WHY US SECTION -->
-    <section class="relative py-32 px-6 why-bg">
-      <div class="max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div>
-            <span class="section-tag1">Our Values</span>
-            <h2 class="section-title text-left">Why NewHeaven IT Solutions?<br/></h2>
-            <!-- <p class="section-sub text-left mb-10">
-              We bring to your business what you need to take it to the next level.
-            </p> -->
+<section class="relative py-32 px-6 overflow-hidden">
 
-            <div class="space-y-6 mt-8">
-              <div v-for="reason in reasons" :key="reason.title" class="reason-card">
-                <div class="reason-icon-wrap">
-                  <Icon :name="reason.icon" class="reason-icon-el" />
-                </div>
-                <div>
-                  <h4 class="reason-title">{{ reason.title }}</h4>
-                  <p class="reason-desc">{{ reason.desc }}</p>
-                </div>
-              </div>
+  <!-- Background video -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    src="/132838-754950587.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+    preload="auto"
+  />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 z-1 why-video-overlay" />
+
+  <div class="relative z-10 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+      <!-- Left: Values -->
+      <div>
+        <span class="section-tag-why">Our Values</span>
+        <h2 class="section-title-why">Why NewHeaven IT Solutions?</h2>
+
+        <div class="space-y-6 mt-8">
+          <div v-for="reason in reasons" :key="reason.title" class="reason-card-why">
+            <div class="reason-icon-wrap-why">
+              <Icon :name="reason.icon" class="reason-icon-el-why" />
+            </div>
+            <div>
+              <h4 class="reason-title-why">{{ reason.title }}</h4>
+              <p class="reason-desc-why">{{ reason.desc }}</p>
             </div>
           </div>
-
-
-          <div class="trust-visual">
-
-  <!-- Main trust card -->
-  <div class="trust-main-card">
-    <div class="trust-card-header">
-      <div class="trust-avatar-group">
-        <div class="trust-avatar" style="background: linear-gradient(135deg, #0369a1, #0ea5e9)">O</div>
-        <div class="trust-avatar" style="background: linear-gradient(135deg, #059669, #34d399)">S</div>
-        <div class="trust-avatar" style="background: linear-gradient(135deg, #7c3aed, #a78bfa)">M</div>
-        <div class="trust-avatar" style="background: linear-gradient(135deg, #dc2626, #f87171)">A</div>
-      </div>
-      <div>
-        <p class="trust-client-text">Trusted by founders & businesses</p>
-        <div class="trust-stars">
-          <Icon v-for="i in 5" :key="i" name="ph:star-fill" class="text-yellow-400" />
-          <span class="trust-rating">5.0</span>
         </div>
       </div>
-    </div>
 
-    <div class="trust-divider" />
+      <!-- Right: Trust panel -->
+      <div class="trust-panel">
 
-    <!-- Stats grid -->
-    <div class="trust-stats-grid">
-      <div class="trust-stat">
-        <span class="trust-stat-val">10+</span>
-        <span class="trust-stat-label">Projects Delivered</span>
-      </div>
-      <div class="trust-stat">
-        <span class="trust-stat-val">100%</span>
-        <span class="trust-stat-label">Satisfaction Rate</span>
-      </div>
-      <div class="trust-stat">
-        <span class="trust-stat-val">2+</span>
-        <span class="trust-stat-label">Years Experience</span>
-      </div>
-      <div class="trust-stat">
-        <span class="trust-stat-val">4</span>
-        <span class="trust-stat-label">Core Services</span>
-      </div>
-    </div>
-
-    <div class="trust-divider" />
-
-    <!-- Latest activity -->
-    <div class="trust-activity">
-      <div class="trust-activity-dot" />
-      <p class="trust-activity-text">New project started today</p>
-    </div>
-  </div>
-
-  <!-- Side trust badges -->
-  <div class="trust-badge trust-badge-1">
-    <div class="trust-badge-icon">
-      <Icon name="ph:shield-check-fill" class="text-green-500" />
-    </div>
-    <div>
-      <p class="trust-badge-title">Secure & Reliable</p>
-      <p class="trust-badge-sub">SSL, HTTPS & best practices</p>
-    </div>
-  </div>
-
-  <div class="trust-badge trust-badge-2">
-    <div class="trust-badge-icon">
-      <Icon name="ph:clock-countdown-fill" class="text-sky-500" />
-    </div>
-    <div>
-      <p class="trust-badge-title">Fast Response</p>
-      <p class="trust-badge-sub">Reply within minutes</p>
-    </div>
-  </div>
-
-  <div class="trust-badge trust-badge-3">
-    <div class="trust-badge-icon">
-      <Icon name="ph:hand-heart-fill" class="text-rose-500" />
-    </div>
-    <div>
-      <p class="trust-badge-title">Free Consultation</p>
-      <p class="trust-badge-sub">No strings attached</p>
-    </div>
-  </div>
-
-</div>
-
-
-
+        <!-- Headline row -->
+        <div class="trust-headline-row">
+          <div class="trust-headline-icon">
+            <Icon name="ph:seal-check-fill" class="text-sky-500" style="font-size:2rem" />
+          </div>
+          <div>
+            <h3 class="trust-headline-title">Trusted by Founders & Businesses</h3>
+            <p class="trust-headline-sub">Nigeria · Africa · Worldwide</p>
+          </div>
         </div>
+
+        <!-- Stats row -->
+        <div class="trust-stats-row">
+          <div class="trust-stat-block" v-for="stat in trustStats" :key="stat.label">
+            <span class="tsb-val">{{ stat.val }}</span>
+            <span class="tsb-label">{{ stat.label }}</span>
+          </div>
+        </div>
+
+        <div class="tp-divider" />
+
+        <!-- Trust signals -->
+        <div class="trust-signals">
+          <div class="trust-signal" v-for="signal in trustSignals" :key="signal.title">
+            <div class="ts-icon-wrap" :style="`background: ${signal.bg}`">
+              <Icon :name="signal.icon" :style="`color: ${signal.color}`" class="ts-icon" />
+            </div>
+            <div class="ts-body">
+              <p class="ts-title">{{ signal.title }}</p>
+              <p class="ts-desc">{{ signal.desc }}</p>
+            </div>
+            <Icon name="ph:check-circle-fill" class="ts-check" />
+          </div>
+        </div>
+
+        <div class="tp-divider" />
+
+        <!-- Founder quote -->
+        <div class="trust-commitment">
+          <Icon name="ph:quotes-fill" class="trust-quote-icon" />
+          <p class="trust-quote-text">
+            Every project we take on is treated as a mission, not a transaction.
+            Your growth is the metric we measure ourselves by.
+          </p>
+          <div class="trust-sig">
+            <div class="trust-sig-avatar">OP</div>
+            <div>
+              <p class="trust-sig-name">Oguntola Pelumi</p>
+              <p class="trust-sig-role">Founder, NewHeaven IT Solutions</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- PROCESS SECTION -->
     <section class="py-24 px-6 process-bg">
@@ -252,20 +183,35 @@
     </section>
 
     <!-- SERVICES SECTION -->
-    <section class="relative py-32 px-6 services-bg">
-  <div class="max-w-7xl mx-auto">
+   <section class="relative py-32 px-6 overflow-hidden">
+
+  <!-- Background video -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    src="/144555-784867402.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+    preload="auto"
+  />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 z-1 services-video-overlay" />
+
+  <div class="relative z-10 max-w-7xl mx-auto">
 
     <!-- Header -->
     <div class="text-center mb-20">
-      <span class="section-tag">What We Offer</span>
-      <h2 class="section-title">Our Services</h2>
-      <p class="section-sub">
+      <span class="services-tag">What We Offer</span>
+      <h2 class="services-title">Our Services</h2>
+      <p class="services-sub">
         From professional websites to machine learning models — we cover
         the full spectrum of what your business needs to grow digitally.
       </p>
     </div>
 
-    <!-- Service cards — title + description only -->
+    <!-- Service cards -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
       <div
         v-for="(service, i) in services"
@@ -294,34 +240,45 @@
 
   </div>
 </section>
-
     
     
     <!-- CTA -->
-    <section class="relative py-32 px-6 cta-section overflow-hidden">
-      <div class="cta-orb orb-c1" />
-      <div class="cta-orb orb-c2" />
-      <div class="cta-stars">
-        <div v-for="i in 30" :key="`cta-star-${i}`" class="cta-star" :style="ctaStarStyle(i)" />
-      </div>
-      <div class="relative z-10 max-w-3xl mx-auto text-center">
-        <Icon name="ph:star-four-fill" class="text-yellow-300 mb-6" style="font-size:3rem; filter: drop-shadow(0 0 20px rgba(252,211,77,0.8))" />
-        <h2 class="text-4xl md:text-6xl font-bold text-white mb-6 cta-title">
-          Ready to Elevate <br/>Your Business?
-        </h2>
-        <p class="text-sky-100 text-lg mb-10 opacity-90">
-          Let's build something extraordinary together. Your vision, our expertise.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <UButton to="/contact" size="xl" variant="solid" color="neutral" class="cta-btn-white">
-            <Icon name="ph:handshake-fill" class="mr-2" /> Contact Us
-          </UButton>
-          <!-- <UButton to="/pricing" size="xl" variant="outline" class="cta-btn-outline">
-            <Icon name="ph:tag-fill" class="mr-2" /> View Pricing
-          </UButton> -->
-        </div>
-      </div>
-    </section>
+   <section class="relative py-32 px-6 overflow-hidden">
+
+  <!-- Background video -->
+  <video
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    src="/22183-712840599.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+    preload="auto"
+  />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 z-1 cta-video-overlay" />
+
+  <div class="relative z-10 max-w-3xl mx-auto text-center">
+    <Icon
+      name="ph:star-four-fill"
+      class="text-yellow-300 mb-6"
+      style="font-size:3rem; filter: drop-shadow(0 0 20px rgba(252,211,77,0.8))"
+    />
+    <h2 class="cta-video-title">
+      Ready to Elevate <br/>Your Business?
+    </h2>
+    <p class="cta-video-sub">
+      Let's build something extraordinary together. Your vision, our expertise.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <UButton to="/contact" size="xl" variant="solid" color="neutral" class="cta-btn-white">
+        <Icon name="ph:handshake-fill" class="mr-2" /> Contact Us
+      </UButton>
+    </div>
+  </div>
+
+</section>
 
     <!-- WhatsApp FAB -->
     <a href="https://wa.me/9035993262" target="_blank" class="whatsapp-fab" title="Chat with us on WhatsApp">
@@ -337,7 +294,8 @@
 
 <script setup lang="ts">
 
-import { onMounted, onUnmounted } from 'vue'
+import { onMounted, onUnmounted, nextTick } from  'vue'
+
 
 const stats = [
   { icon: 'ph:rocket-launch-fill', value: '10+', label: 'Projects Delivered' },
@@ -523,6 +481,8 @@ onMounted(() => {
   }
 })
 
+
+
 onUnmounted(() => {
   const heroSection = document.querySelector('.hero-section') as HTMLElement
   if (heroSection && handleMouseMove && handleMouseLeave) {
@@ -536,106 +496,137 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* ── DEEP HEAVEN BACKGROUND ── */
-.heaven-bg {
-  background: linear-gradient(180deg,
-    #0a0a2e 0%,
-    #0d1b4b 8%,
-    #0f2d6b 18%,
-    #0a4a8a 30%,
-    #0369a1 45%,
-    #0ea5e9 62%,
-    #38bdf8 75%,
-    #7dd3fc 88%,
-    #bae6fd 100%
+/* ── Video overlay ── */
+.hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(5, 20, 50, 0.55) 0%,
+    rgba(3, 105, 161, 0.45) 50%,
+    rgba(5, 20, 50, 0.65) 100%
   );
-  animation: heavenShift 12s ease-in-out infinite alternate;
-}
-@keyframes heavenShift {
-  0% { filter: brightness(1) saturate(1); }
-  50% { filter: brightness(1.05) saturate(1.1) hue-rotate(5deg); }
-  100% { filter: brightness(1.1) saturate(1.15) hue-rotate(-3deg); }
 }
 
-/* ── AURORA LAYER ── */
-.aurora-layer {
-  background:
-    radial-gradient(ellipse 80% 40% at 20% 20%, rgba(99,102,241,0.25) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 30% at 80% 15%, rgba(14,165,233,0.2) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 25% at 50% 5%, rgba(139,92,246,0.15) 0%, transparent 50%);
-  animation: auroraMove 8s ease-in-out infinite alternate;
+/* ── Badge ── */
+.badge-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 999px;
+  padding: 8px 20px;
+  margin-bottom: 2rem;
+  font-size: 0.875rem; font-weight: 600; color: white;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  
 }
-@keyframes auroraMove {
-  0% { opacity: 0.6; transform: translateY(0) scaleX(1); }
-  50% { opacity: 1; transform: translateY(10px) scaleX(1.05); }
-  100% { opacity: 0.7; transform: translateY(-5px) scaleX(0.98); }
+.pulse-dot {
+  width: 8px; height: 8px;
+  background: #4ade80; border-radius: 50%;
+  animation: pulse 2s ease infinite;
+  box-shadow: 0 0 8px rgba(74,222,128,0.8);
 }
-
-/* ── STARS ── */
-.star {
-  position: absolute;
-  background: white;
-  border-radius: 50%;
-  animation: twinkle ease-in-out infinite;
-}
-@keyframes twinkle {
-  0%, 100% { opacity: 0.1; transform: scale(0.8); }
-  50% { opacity: 1; transform: scale(1.2); box-shadow: 0 0 4px rgba(255,255,255,0.8); }
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(74,222,128,0.6); }
+  50% { box-shadow: 0 0 0 8px rgba(74,222,128,0); }
 }
 
-/* ── LIGHT BEAMS ── */
-.beam {
-  position: absolute;
-  top: -20%;
-  width: 2px;
-  height: 140%;
-  background: linear-gradient(180deg, rgba(255,255,255,0.0) 0%, rgba(255,255,255,0.15) 30%, rgba(255,255,255,0.05) 70%, transparent 100%);
-  transform-origin: top center;
-  animation: beamSway 8s ease-in-out infinite;
+/* ── Hero title ── */
+.hero-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900; line-height: 1.05;
+  letter-spacing: -0.03em; margin-bottom: 1rem;
 }
-.beam-1 { left: 10%; width: 80px; transform: rotate(-20deg); animation-delay: 0s; opacity: 0.4; }
-.beam-2 { left: 30%; width: 50px; transform: rotate(-8deg); animation-delay: 1.5s; opacity: 0.3; }
-.beam-3 { left: 50%; width: 100px; transform: rotate(2deg); animation-delay: 3s; opacity: 0.35; }
-.beam-4 { left: 68%; width: 60px; transform: rotate(12deg); animation-delay: 4.5s; opacity: 0.25; }
-.beam-5 { left: 85%; width: 70px; transform: rotate(22deg); animation-delay: 6s; opacity: 0.3; }
-@keyframes beamSway {
-  0%, 100% { opacity: 0.1; transform: rotate(var(--r, 0deg)) scaleY(0.95); }
-  50% { opacity: 0.5; transform: rotate(calc(var(--r, 0deg) + 3deg)) scaleY(1.05); }
+.hero-line-1 { color: #ffffff; text-shadow: 0 2px 30px rgba(0,0,0,0.4); }
+.gradient-text {
+  background: linear-gradient(90deg, #fcd34d, #fb923c, #f472b6, #a78bfa, #60a5fa, #34d399);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  background-size: 300%; animation: rainbowMove 5s ease infinite;
+  filter: drop-shadow(0 0 30px rgba(252,211,77,0.4));
 }
-
-/* ── CLOUD LAYERS ── */
-.cloud-layer { position: absolute; animation: floatCloud linear infinite; }
-
-/* Background clouds - dark, slow */
-.cloud-bg-1 { top: 5%; animation-duration: 80s; left: -20%; animation-delay: 0s; filter: blur(2px); }
-.cloud-bg-2 { top: 20%; animation-duration: 95s; left: -15%; animation-delay: -30s; filter: blur(1px); }
-.cloud-bg-3 { top: 2%; animation-duration: 110s; left: -25%; animation-delay: -60s; filter: blur(3px); }
-
-/* Mid clouds */
-.cloud-mid-1 { top: 25%; animation-duration: 50s; left: -15%; animation-delay: -10s; }
-.cloud-mid-2 { top: 15%; animation-duration: 60s; left: -10%; animation-delay: -25s; }
-.cloud-mid-3 { top: 35%; animation-duration: 70s; left: -20%; animation-delay: -40s; }
-
-/* Foreground clouds - light, fast */
-.cloud-fg-1 { top: 40%; animation-duration: 30s; left: -10%; animation-delay: -5s; }
-.cloud-fg-2 { top: 30%; animation-duration: 38s; left: -8%; animation-delay: -15s; }
-
-@keyframes floatCloud {
-  from { transform: translateX(-200px); }
-  to { transform: translateX(110vw); }
+@keyframes rainbowMove {
+  0% { background-position: 0%; }
+  50% { background-position: 100%; }
+  100% { background-position: 0%; }
 }
 
-/* ── DEPTH ORBS ── */
-.orb { position: absolute; border-radius: 50%; filter: blur(60px); animation: orbPulse ease-in-out infinite; pointer-events: none; }
-.orb-1 { width: 500px; height: 500px; top: -100px; left: -100px; background: radial-gradient(circle, rgba(99,102,241,0.3) 0%, transparent 70%); animation-duration: 8s; animation-delay: 0s; }
-.orb-2 { width: 400px; height: 400px; top: 20%; right: -80px; background: radial-gradient(circle, rgba(14,165,233,0.2) 0%, transparent 70%); animation-duration: 10s; animation-delay: 2s; }
-.orb-3 { width: 300px; height: 300px; bottom: 10%; left: 20%; background: radial-gradient(circle, rgba(139,92,246,0.15) 0%, transparent 70%); animation-duration: 12s; animation-delay: 4s; }
-.orb-4 { width: 350px; height: 350px; bottom: 0; right: 20%; background: radial-gradient(circle, rgba(56,189,248,0.2) 0%, transparent 70%); animation-duration: 9s; animation-delay: 1s; }
-@keyframes orbPulse {
-  0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.6; }
-  33% { transform: scale(1.1) translate(20px, -20px); opacity: 0.8; }
-  66% { transform: scale(0.95) translate(-10px, 15px); opacity: 0.5; }
+/* ── Motto ── */
+.hero-motto {
+  display: inline-block;
+  font-size: 1.1rem; font-weight: 700;
+  color: #4ade80;
+  letter-spacing: 0.08em; font-style: italic;
+  margin-bottom: 1.25rem;
+  padding: 0.5rem 1.75rem;
+  background: rgba(74,222,128,0.08);
+  border: 1px solid rgba(74,222,128,0.25);
+  border-radius: 9999px;
+  box-shadow: 0 0 20px rgba(74,222,128,0.1);
+  backdrop-filter: blur(8px);
 }
+
+/* ── Subheading ── */
+.hero-sub {
+  font-size: 1.1rem; color: rgba(255,255,255,0.85);
+  max-width: 640px; margin: 0 auto 1.5rem;
+  line-height: 1.8; text-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+
+/* ── Buttons ── */
+.hero-btn-primary {
+  box-shadow: 0 8px 32px rgba(14,165,233,0.5);
+  transition: all 0.3s;
+}
+.hero-btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(14,165,233,0.6);
+}
+.hero-btn-outline {
+  border-color: rgba(255,255,255,0.6) !important;
+  color: white !important;
+  background: rgba(255,255,255,0.1) !important;
+  backdrop-filter: blur(8px); transition: all 0.3s;
+}
+.hero-btn-outline:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.2) !important;
+  border-color: white !important;
+}
+
+/* ── Scroll indicator ── */
+.scroll-indicator { animation: bounce 2s ease infinite; }
+.scroll-mouse {
+  width: 24px; height: 40px;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 12px;
+  display: flex; justify-content: center; padding-top: 6px;
+}
+.scroll-wheel {
+  width: 4px; height: 8px;
+  background: white; border-radius: 2px;
+  animation: scrollWheel 2s ease infinite; opacity: 0.8;
+}
+@keyframes scrollWheel {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(12px); opacity: 0; }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(6px); }
+}
+
+/* ── Fade in animations ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-down { animation: fadeInDown 0.8s ease both; }
+.animate-fade-in-up { animation: fadeInUp 0.8s ease 0.2s both; }
+.animate-fade-in-up-delay { animation: fadeInUp 0.8s ease 0.4s both; }
+.animate-fade-in-up-delay2 { animation: fadeInUp 0.8s ease 0.6s both; }
 
 /* ── HERO TEXT ── */
 .hero-title { font-size: clamp(2.5rem, 7vw, 5.5rem); font-weight: 900; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.03em; }
@@ -739,169 +730,309 @@ onUnmounted(() => {
 .step-desc { color: #64748b; font-size: 0.875rem; line-height: 1.6; }
 
 /* ── TRUST VISUAL ── */
-.trust-visual {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 420px;
-  width: 100%;
+/* ── Why Us Video Section ── */
+.why-video-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(5, 20, 50, 0.75) 0%,
+    rgba(3, 105, 161, 0.65) 50%,
+    rgba(5, 50, 30, 0.75) 100%
+  );
 }
 
-.trust-main-card {
-  background: rgba(255,255,255,0.95);
-  border: 1px solid #bae6fd;
-  border-radius: 1.75rem;
-  padding: 2rem;
-  width: 100%;
-  max-width: 320px;
-  box-shadow: 0 30px 60px rgba(14,165,233,0.15);
-  animation: float 4s ease-in-out infinite;
-  backdrop-filter: blur(12px);
-  z-index: 2;
-}
-
-/* Avatar group */
-.trust-card-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
-}
-.trust-avatar-group {
-  display: flex;
-}
-.trust-avatar {
-  width: 36px; height: 36px;
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-weight: 800; font-size: 0.85rem; color: white;
-  border: 2px solid white;
-  margin-left: -8px;
-}
-.trust-avatar:first-child { margin-left: 0; }
-.trust-client-text {
-  font-size: 0.8rem; font-weight: 600;
-  color: #0c4a6e; margin-bottom: 0.25rem;
-}
-.trust-stars {
-  display: flex; align-items: center; gap: 2px;
-  font-size: 0.85rem;
-}
-.trust-rating {
+/* Section tag & title */
+.section-tag-why {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  color: #7dd3fc;
   font-size: 0.8rem; font-weight: 700;
-  color: #92400e; margin-left: 4px;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.2);
+  margin-bottom: 1rem;
+  backdrop-filter: blur(8px);
+  margin-left: 210px;
+}
+.section-title-why {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800; color: white;
+  line-height: 1.2; margin-bottom: 1rem;
 }
 
-/* Divider */
-.trust-divider {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #bae6fd, transparent);
-  margin: 1rem 0;
+/* Reason cards */
+.reason-card-why {
+  display: flex; align-items: flex-start; gap: 1rem;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 1rem; padding: 1.25rem 1.5rem;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s;
 }
-
-/* Stats grid */
-.trust-stats-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+.reason-card-why:hover {
+  background: rgba(255,255,255,0.14);
+  transform: translateX(6px);
+  border-color: rgba(125,211,252,0.4);
 }
-.trust-stat {
-  display: flex; flex-direction: column;
-  align-items: center; text-align: center;
-  padding: 0.75rem;
-  background: rgba(14,165,233,0.05);
-  border: 1px solid rgba(186,230,253,0.6);
+.reason-icon-wrap-why {
+  width: 44px; height: 44px; flex-shrink: 0;
+  background: rgba(14,165,233,0.2);
+  border: 1px solid rgba(125,211,252,0.3);
   border-radius: 0.75rem;
+  display: flex; align-items: center; justify-content: center;
 }
-.trust-stat-val {
-  font-size: 1.4rem; font-weight: 900;
-  color: #0369a1; line-height: 1;
+.reason-icon-el-why { font-size: 1.3rem; color: #7dd3fc; }
+.reason-title-why {
+  font-weight: 700; color: white;
+  font-size: 0.95rem; margin-bottom: 0.25rem;
+}
+.reason-desc-why {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.875rem; line-height: 1.6;
+}
+
+/* ── Trust Panel ── */
+.trust-panel {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 2rem; padding: 2.5rem;
+  width: 100%; max-width: 420px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+  backdrop-filter: blur(5px);
+  margin-left: 80px;
+}
+
+/* Headline row */
+.trust-headline-row {
+  display: flex; align-items: center;
+  gap: 1rem; margin-bottom: 1.75rem;
+}
+.trust-headline-icon {
+  width: 52px; height: 52px;
+  background: rgba(14,165,233,0.08);
+  border: 1px solid rgba(186,230,253,0.8);
+  border-radius: 1rem;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.trust-headline-title { color: white; font-weight: bold; }
+.trust-headline-sub { color: #7dd3fc; font-weight: bold; }
+
+/* Stats row */
+.trust-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem; margin-bottom: 1.75rem;
+}
+.trust-stat-block {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.tsb-val {
+  font-size: 1.3rem; font-weight: 900;
+  color: #7dd3fc;; line-height: 1;
   margin-bottom: 0.25rem;
 }
-.trust-stat-label {
-  font-size: 0.65rem; font-weight: 600;
-  color: #64748b; text-transform: uppercase;
+.tsb-label {
+  font-size: 0.6rem; font-weight: 600;
+   color: rgba(255,255,255,0.6); text-transform: uppercase;
   letter-spacing: 0.05em; line-height: 1.3;
   text-align: center;
 }
 
-/* Activity indicator */
-.trust-activity {
-  display: flex; align-items: center; gap: 0.5rem;
-}
-.trust-activity-dot {
-  width: 8px; height: 8px;
-  border-radius: 50%; background: #4ade80;
-  box-shadow: 0 0 8px rgba(74,222,128,0.8);
-  animation: pulse 2s ease infinite;
-  flex-shrink: 0;
-}
-@keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(74,222,128,0.6); }
-  50% { box-shadow: 0 0 0 6px rgba(74,222,128,0); }
-}
-.trust-activity-text {
-  font-size: 0.8rem; font-weight: 600;
-  color: #475569;
+/* Divider */
+.tp-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #bae6fd, transparent);
+  margin: 1.5rem 0;
 }
 
-/* Trust badges */
-.trust-badge {
-  position: absolute;
-  display: flex; align-items: center; gap: 0.6rem;
-  background: rgba(255,255,255,0.95);
-  border: 1px solid #bae6fd;
-  border-radius: 1rem;
-  padding: 0.75rem 1rem;
-  box-shadow: 0 8px 24px rgba(14,165,233,0.12);
-  backdrop-filter: blur(8px);
-  min-width: 180px;
+/* Trust signals */
+.trust-signals {
+  display: flex; flex-direction: column; gap: 0.75rem;
 }
-.trust-badge-icon {
-  width: 36px; height: 36px;
-  background: rgba(14,165,233,0.08);
+.trust-signal {
+  display: flex; align-items: center; gap: 0.875rem;
+  padding: 0.875rem 1rem;
+  border-radius: 0.875rem;
+  transition: all 0.2s ease;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.trust-signal:hover {
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(125,211,252,0.4);
+  transform: translateX(4px);
+}
+.ts-icon-wrap {
+  width: 38px; height: 38px;
   border-radius: 0.6rem;
   display: flex; align-items: center; justify-content: center;
-  font-size: 1.1rem; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.trust-badge-title {
-  font-size: 0.8rem; font-weight: 700;
-  color: #0c4a6e; margin-bottom: 0.1rem;
+.ts-icon { font-size: 1.1rem; }
+.ts-body { flex: 1; }
+.ts-title {
+  font-size: 0.85rem; font-weight: 700;
+  color: white; margin-bottom: 0.1rem;
 }
-.trust-badge-sub {
-  font-size: 0.7rem; color: #64748b;
+.ts-desc { font-size: 0.75rem; color: rgba(255,255,255,0.65); line-height: 1.4; }
+.ts-check { color: #4ade80; font-size: 1.1rem; flex-shrink: 0; }
+
+/* Commitment quote */
+.trust-commitment { position: relative; }
+.trust-quote-icon {
+  font-size: 1.5rem; color: rgba(255,255,255,0.3);;
+  margin-bottom: 0.5rem; display: block;
 }
-.trust-badge-1 {
-  top: 0px; right: -20px;
-  animation: float 3.5s ease-in-out infinite 0.3s;
+.trust-quote-text {
+  font-size: 0.9rem; line-height: 1.7;
+  color: rgba(255,255,255,0.75); font-style: italic;
+  margin-bottom: 1.25rem;
 }
-.trust-badge-2 {
-  bottom: 60px; left: -20px;
-  animation: float 3.5s ease-in-out infinite 0.8s;
+.trust-sig { display: flex; align-items: center; gap: 0.75rem; color: white; }
+.trust-sig-avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: linear-gradient(135deg, #0369a1, #0ea5e9);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 0.8rem; color: white; flex-shrink: 0;
 }
-.trust-badge-3 {
-  bottom: -10px; right: 10px;
-  animation: float 3.5s ease-in-out infinite 1.2s;
+.trust-sig-name { font-size: 0.875rem; font-weight: 700; color: white; }
+.trust-sig-role { font-size: 0.75rem; color: rgba(255,255,255,0.6); }
+.trust-headline-icon {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
-@media (max-width: 768px) {
-  .trust-badge { position: static; margin-top: 1rem; }
-  .trust-visual { flex-direction: column; min-height: auto; gap: 1rem; }
-}
+
 
 
 /* ── SERVICE CARDS ── */
-.service-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 1.5rem; padding: 2.5rem 2rem; backdrop-filter: blur(16px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: fadeInUp 0.6s ease both; box-shadow: 0 8px 32px rgba(0,0,0,0.2); }
-.service-card:hover { transform: translateY(-12px) scale(1.02); box-shadow: 0 30px 60px rgba(0,0,0,0.3); border-color: rgba(125,211,252,0.4); background: rgba(255,255,255,0.1); }
-.service-icon-wrap { width: 64px; height: 64px; background: linear-gradient(135deg, rgba(14,165,233,0.3), rgba(99,102,241,0.3)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 4px 20px rgba(14,165,233,0.2); }
-.service-icon-el { font-size: 2rem; color: #7dd3fc; }
-.service-title { font-size: 1.3rem; font-weight: 700; color: white; margin-bottom: 0.75rem; }
-.service-desc { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
-.service-features { list-style: none; padding: 0; margin-bottom: 1.5rem; }
-.service-features li { color: #7dd3fc; font-size: 0.875rem; padding: 4px 0; font-weight: 500; display: flex; align-items: center; }
-.service-link { color: #38bdf8; font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-flex; align-items: center; transition: all 0.2s; }
-.service-link:hover { color: white; gap: 6px; }
+/* ── Services Video Section ── */
+.services-video-overlay {
+  background: linear-gradient(
+    160deg,
+    rgba(2, 10, 30, 0.82) 0%,
+    rgba(3, 69, 120, 0.72) 50%,
+    rgba(2, 30, 15, 0.82) 100%
+  );
+}
+
+.services-tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  color: #7dd3fc;
+  font-size: 0.8rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 6px 18px; border-radius: 999px;
+  border: 1px solid rgba(125,211,252,0.3);
+  margin-bottom: 1rem;
+  backdrop-filter: blur(8px);
+}
+.services-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800; color: white;
+  line-height: 1.1; margin-bottom: 1rem;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  letter-spacing: -0.02em;
+}
+.services-sub {
+  color: rgba(255,255,255,0.7);
+  font-size: 1.05rem; line-height: 1.7;
+  max-width: 560px; margin: 0 auto;
+}
+
+/* Service cards over video */
+.service-card-minimal {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  backdrop-filter: blur(16px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.service-card-minimal::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #0369a1, #0ea5e9, #059669);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.service-card-minimal:hover {
+  background: rgba(255,255,255,0.13);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  border-color: rgba(125,211,252,0.35);
+}
+.service-card-minimal:hover::before {
+  transform: scaleX(1);
+}
+.scm-icon-wrap {
+  width: 56px; height: 56px;
+  flex-shrink: 0;
+  background: rgba(14,165,233,0.15);
+  border: 1px solid rgba(125,211,252,0.25);
+  border-radius: 1rem;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 16px rgba(14,165,233,0.2);
+}
+.scm-icon {
+  font-size: 1.75rem; color: #7dd3fc;
+  filter: drop-shadow(0 0 6px rgba(125,211,252,0.4));
+}
+.scm-content { flex: 1; }
+.scm-title {
+  font-size: 1.2rem; font-weight: 800;
+  color: white; margin-bottom: 0.6rem;
+  letter-spacing: -0.02em;
+}
+.scm-desc {
+  font-size: 0.95rem; line-height: 1.7;
+  color: rgba(255,255,255,0.65);
+}
+
+/* CTA button */
+/* ── CTA Video Section ── */
+.cta-video-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 10, 35, 0.80) 0%,
+    rgba(3, 69, 120, 0.70) 50%,
+    rgba(2, 10, 35, 0.85) 100%
+  );
+}
+.cta-video-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 900; color: white;
+  line-height: 1.1; margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.4);
+}
+.cta-video-sub {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.15rem; line-height: 1.7;
+  margin-bottom: 2.5rem;
+  max-width: 500px; margin-left: auto; margin-right: auto;
+}
+.cta-btn-white {
+  background: white !important;
+  color: #0369a1 !important;
+  font-weight: 700;
+  transition: all 0.3s;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+.cta-btn-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+}
 
 /* ── WHY US ── */
 .reason-card { display: flex; gap: 1rem; align-items: flex-start; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 1rem; padding: 1.25rem 1.5rem; transition: all 0.3s; }
@@ -1028,6 +1159,17 @@ onUnmounted(() => {
 .whatsapp-fab:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 8px 32px rgba(37,211,102,0.5); }
 .whatsapp-label { display: block; }
 
+@media (max-width: 768px) {
+  .trust-panel {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 2rem; padding: 2.5rem;
+  width: 100%; max-width: 420px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+  backdrop-filter: blur(5px);
+  margin-left: 0px;
+}
+}
 
 
 @media (max-width: 480px) {
@@ -1042,8 +1184,34 @@ onUnmounted(() => {
 .section-title1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #0c4a6e; line-height: 1.2; margin-bottom: 1rem; text-align: center; }
 .section-sub1 { color: #64748b; font-size: 1.05rem; max-width: 560px; margin: 0 auto; line-height: 1.7; text-align: center; }
 
+.trust-panel {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 2rem; padding: 2.5rem;
+  width: 100%; max-width: 420px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+  backdrop-filter: blur(5px);
+  margin-left: 0px;
+}
 
-
+.section-tag-why {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  color: #7dd3fc;
+  font-size: 0.8rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.2);
+  margin-bottom: 1rem;
+  backdrop-filter: blur(8px);
+  margin-left: 105px;
+}
+.section-title-why {
+  font-size: 20px;
+  font-weight: 800; color: white;
+  line-height: 1.2; margin-bottom: 1rem;
+  margin-left: 20px;
+}
 
 }
 </style>
