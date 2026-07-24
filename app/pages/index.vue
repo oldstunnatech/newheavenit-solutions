@@ -241,7 +241,7 @@
   <!-- Background video -->
   <video
     class="absolute inset-0 w-full h-full object-cover z-0"
-    src="https://res.cloudinary.com/lu6y4btx/video/upload/v1784833569/144555-784867402_gir6bx.mp4"
+    src="https://res.cloudinary.com/lu6y4btx/video/upload/v1784833681/22183-712840599_frir9i.mp4"
     autoplay
     loop
     muted
