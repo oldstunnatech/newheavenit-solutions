@@ -838,6 +838,7 @@ onUnmounted(() => {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem; margin-bottom: 1.75rem;
+  margin-left: -30px;
 }
 .trust-stat-block {
   background: rgba(255,255,255,0.1);
@@ -1227,6 +1228,15 @@ onUnmounted(() => {
   font-weight: 800; color: white;
   line-height: 1.2; margin-bottom: 1rem;
   margin-left: 20px;
+}
+
+/* Stats row */
+.trust-stats-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem; margin-bottom: 1.75rem;
+  margin-left: 0px;
+  
 }
 
 }
