@@ -290,11 +290,42 @@
 import { onMounted, onUnmounted, nextTick } from  'vue'
 
 
-const stats = [
-  { icon: 'ph:rocket-launch-fill', value: '10+', label: 'Projects Delivered' },
-  { icon: 'ph:clock-countdown-fill', value: '2+', label: 'Years Experience' },
-  { icon: 'ph:smiley-fill', value: '10+', label: 'Happy Clients' },
-  { icon: 'ph:star-fill', value: '100%', label: 'Satisfaction Rate' },
+const trustStats = [
+  { val: '10+', label: 'Projects' },
+  { val: '100%', label: 'Satisfaction' },
+  { val: '2+', label: 'Years' },
+  { val: '4', label: 'Services' },
+]
+
+const trustSignals = [
+  {
+    icon: 'ph:shield-check-fill',
+    title: 'Secure & Reliable',
+    desc: 'SSL, HTTPS & industry best practices on every project',
+    bg: 'rgba(5,150,105,0.1)',
+    color: '#059669',
+  },
+  {
+    icon: 'ph:clock-countdown-fill',
+    title: 'Fast Response Time',
+    desc: 'Every message replied to within minutes, not days',
+    bg: 'rgba(3,105,161,0.1)',
+    color: '#0369a1',
+  },
+  {
+    icon: 'ph:hand-heart-fill',
+    title: 'Free Consultation',
+    desc: 'Talk to us first — no commitment, no strings attached',
+    bg: 'rgba(225,29,72,0.1)',
+    color: '#e11d48',
+  },
+  {
+    icon: 'ph:arrows-clockwise-fill',
+    title: 'Ongoing Support',
+    desc: 'We don\'t disappear after delivery — we stay with you',
+    bg: 'rgba(124,58,237,0.1)',
+    color: '#7c3aed',
+  },
 ]
 
 const services = [
@@ -351,24 +382,7 @@ const steps = [
   { icon: 'ph:rocket-launch-fill', title: 'Launch', desc: 'We deploy, hand over, and provide ongoing support to ensure everything runs perfectly.', },
 ]
 
-const techs = [
-  { icon: 'logos:vue', name: 'Vue.js' },
-  { icon: 'logos:nuxt-icon', name: 'Nuxt' },
-  { icon: 'logos:typescript-icon', name: 'TypeScript' },
-  { icon: 'logos:nodejs-icon', name: 'Node.js' },
-  { icon: 'logos:python', name: 'Python' },
-  { icon: 'logos:django', name: 'Django' },
-  { icon: 'logos:postgresql', name: 'PostgreSQL' },
-  { icon: 'logos:supabase-icon', name: 'Supabase' },
-  { icon: 'logos:mysql', name: 'MySQL' },
-  { icon: 'simple-icons:scikitlearn', name: 'Scikit-Learn' },
-  { icon: 'logos:matplotlib', name: 'MatPlot Lib' },
-  { icon: 'simple-icons:powerbi', name: 'PowerBi' },
-  { icon: 'logos:numpy', name: 'Numpy' },
-  { icon: 'logos:pandas', name: 'Pandas' },
-  { icon: 'logos:tailwindcss-icon', name: 'Tailwind' },
-  { icon: 'logos:github', name: 'Github' },
-]
+
 
 const starStyle = (i: number) => ({
   left: `${(i * 17 + 5) % 100}%`,
