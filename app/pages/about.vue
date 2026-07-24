@@ -13,7 +13,9 @@
     loop
     muted
     playsinline
+    webkit-playsinline
     preload="auto"
+    x5-playsinline
   />
 
   <!-- Overlay -->
@@ -122,7 +124,9 @@
     loop
     muted
     playsinline
-    preload="auto"
+    webkit-playsinline
+    preload="none"
+    x5-playsinline
   />
 
   <!-- Overlay -->
@@ -327,7 +331,9 @@
     loop
     muted
     playsinline
-    preload="auto"
+    webkit-playsinline
+    preload="none"
+    x5-playsinline
   />
 
   <!-- Overlay -->
