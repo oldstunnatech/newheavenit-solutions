@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
   const resend = new Resend(process.env.RESEND_API_KEY)
 
   await resend.emails.send({
-    from: 'onboarding@resend.dev',
+    from: 'noreply@newheavenitsolutions.com',
     to: 'newheavenitsolutions@outlook.com',
     subject: `New Lead: ${body.name}`,
     html: `
