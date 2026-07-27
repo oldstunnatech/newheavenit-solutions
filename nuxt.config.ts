@@ -24,6 +24,11 @@ export default defineNuxtConfig({
         { property: 'og:description', content: 'Fullstack development, data analysis, and AI solutions.' },
         { property: 'og:type', content: 'website' },
         { name: 'twitter:card', content: 'summary_large_image' },
+        { property: 'og:image', content: 'https://www.newheavenitsolutions.com/og-image.jpg' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:image', content: 'https://www.newheavenitsolutions.com/og-image.jpg' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
