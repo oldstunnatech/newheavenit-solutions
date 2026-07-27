@@ -29,6 +29,7 @@ export default defineNuxtConfig({
         { property: 'og:image:height', content: '630' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:image', content: 'https://www.newheavenitsolutions.com/og-image.jpg' },
+        
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
