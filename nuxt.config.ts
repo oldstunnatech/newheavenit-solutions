@@ -47,6 +47,7 @@ export default defineNuxtConfig({
     }
   },
 
+ 
   modules: [
     '@nuxt/ui',
     '@nuxt/image',
@@ -54,5 +55,16 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     // '@nuxt/content',
     '@nuxtjs/supabase',
+    '@nuxtjs/sitemap',
   ]
+
+
+   site: {
+  url: 'https://www.newheavenitsolutions.com',
+},
+
+sitemap: {
+  strictNuxtContentPaths: false,
+},
+  
 })
