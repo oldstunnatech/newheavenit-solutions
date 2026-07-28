@@ -31,6 +31,7 @@ export default defineNuxtConfig({
         { name: 'twitter:image', content: 'https://www.newheavenitsolutions.com/og-image.jpg' },
         {name: "google-site-verification", content: "WwU9jtFyICJe6drumJjD9bsJfqQc5FOR0844aDoDLwM"},
         
+        
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -56,10 +57,12 @@ export default defineNuxtConfig({
     // '@nuxt/content',
     '@nuxtjs/supabase',
     '@nuxtjs/sitemap',
+    '@nuxtjs/google-analytics',
+
   ]
 
 
-   site: {
+  site: {
   url: 'https://www.newheavenitsolutions.com',
 },
 
@@ -67,4 +70,8 @@ sitemap: {
   strictNuxtContentPaths: false,
 },
   
+googleAnalytics: {
+  id: 'G-0ZJNJ8KYCX',
+},
+
 })
