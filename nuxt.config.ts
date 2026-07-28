@@ -17,9 +17,7 @@ export default defineNuxtConfig({
     strictNuxtContentPaths: false,
   },
 
-  googleAnalytics: {
-    id: 'G-0ZJNJ8KYCX',
-  },
+  
 
   app: {
     head: {
@@ -73,6 +71,6 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxtjs/supabase',
     '@nuxtjs/sitemap',
-    '@nuxtjs/google-analytics',
+    
   ],
 })
