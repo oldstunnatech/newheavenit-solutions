@@ -4,15 +4,21 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  // content: {
-  //   database: {
-  //     type: 'postgres',
-  //     url: process.env.NUXT_CONTENT_DB_URL,
-  //   }
-  // },
-
   supabase: {
     redirect: false,
+  },
+
+  site: {
+    url: 'https://www.newheavenitsolutions.com',
+    name: 'NewHeaven IT Solutions',
+  },
+
+  sitemap: {
+    strictNuxtContentPaths: false,
+  },
+
+  googleAnalytics: {
+    id: 'G-0ZJNJ8KYCX',
   },
 
   app: {
@@ -23,19 +29,31 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'NewHeaven IT Solutions' },
         { property: 'og:description', content: 'Fullstack development, data analysis, and AI solutions.' },
         { property: 'og:type', content: 'website' },
-        { name: 'twitter:card', content: 'summary_large_image' },
         { property: 'og:image', content: 'https://www.newheavenitsolutions.com/og-image.jpg' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:image', content: 'https://www.newheavenitsolutions.com/og-image.jpg' },
-        {name: "google-site-verification", content: "WwU9jtFyICJe6drumJjD9bsJfqQc5FOR0844aDoDLwM"},
-        
-        
+        { name: 'google-site-verification', content: 'WwU9jtFyICJe6drumJjD9bsJfqQc5FOR0844aDoDLwM' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-      ]
+      ],
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-0ZJNJ8KYCX',
+          async: true,
+        },
+        {
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0ZJNJ8KYCX');
+          `,
+          type: 'text/javascript',
+        },
+      ],
     }
   },
 
@@ -48,46 +66,13 @@ export default defineNuxtConfig({
     }
   },
 
- 
   modules: [
     '@nuxt/ui',
     '@nuxt/image',
     '@nuxt/icon',
     '@nuxt/fonts',
-    // '@nuxt/content',
     '@nuxtjs/supabase',
     '@nuxtjs/sitemap',
     '@nuxtjs/google-analytics',
-
-  ]
-
-
-  site: {
-  url: 'https://www.newheavenitsolutions.com',
-},
-
-sitemap: {
-  strictNuxtContentPaths: false,
-},
-  
-app: {
-  head: {
-    script: [
-      {
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-0ZJNJ8KYCX',
-        async: true,
-      },
-      {
-        innerHTML: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-0ZJNJ8KYCX');
-        `,
-        type: 'text/javascript',
-      },
-    ],
-  }
-}
-
+  ],
 })
