@@ -70,8 +70,24 @@ sitemap: {
   strictNuxtContentPaths: false,
 },
   
-googleAnalytics: {
-  id: 'G-0ZJNJ8KYCX',
-},
+app: {
+  head: {
+    script: [
+      {
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-0ZJNJ8KYCX',
+        async: true,
+      },
+      {
+        innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-0ZJNJ8KYCX');
+        `,
+        type: 'text/javascript',
+      },
+    ],
+  }
+}
 
 })
