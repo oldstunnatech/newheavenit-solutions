@@ -29,7 +29,7 @@
     <p class="page-sub animate-fade-in-up-delay">
       Four focused services. One dedicated partner. Whether you need a
       professional website, mined data, sharp analytics, or a machine
-      learning model — we build it right, the first time.
+      learning model - we build it right, the first time.
     </p>
   </div>
 
@@ -72,8 +72,8 @@
             {{ item }}
           </li>
         </ul>
-        <UButton :to="'/contact'" color="primary" variant="solid" size="lg" class="mt-6 service-cta">
-          <Icon name="ph:arrow-right-bold" class="mr-2" /> Get Started
+       <UButton :to="service.link" color="primary" variant="solid" size="lg" class="mt-6 service-cta">
+        <Icon name="ph:arrow-right-bold" class="mr-2" /> Learn more
         </UButton>
       </div>
 
@@ -175,6 +175,7 @@ const mainServices = [
       'SSL Certificate Configuration',
       'Content Management System (CMS)',
     ],
+     link: '/categories/website-development',
     visualLabel: 'website.vue',
     visualLines: [
       { icon: 'ph:paint-brush-fill', text: 'Custom design applied ✓', width: 90 },
@@ -202,6 +203,7 @@ const mainServices = [
       'Data Cleaning & Structuring',
       'Delivered in Excel, CSV or Dashboard',
     ],
+    link: '/categories/data-mining',
     visualLabel: 'mining.py',
     visualLines: [
       { icon: 'ph:magnifying-glass-fill', text: 'Scraping 1,200 records...', width: 88 },
@@ -232,6 +234,7 @@ const mainServices = [
       'Data Cleaning & Preparation',
       'Actionable Recommendations',
     ],
+    link: '/categories/data-analysis',
     visualLabel: 'dashboard.py',
     visualLines: [
       { icon: 'ph:chart-line-up-fill', text: 'Revenue +34% this quarter', width: 85 },
@@ -262,6 +265,7 @@ const mainServices = [
       'Model Performance Monitoring & Retraining',
     ],
     visualLabel: 'model.py',
+    link: '/categories/data-science-ai',
     visualLines: [
       { icon: 'ph:brain-fill', text: 'Model accuracy: 97.3%', width: 90 },
       { icon: 'ph:robot-fill', text: 'NLP pipeline active ✓', width: 75 },

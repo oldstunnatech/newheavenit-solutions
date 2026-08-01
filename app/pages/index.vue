@@ -224,8 +224,11 @@
         <div class="scm-content">
           <h3 class="scm-title">{{ service.title }}</h3>
           <p class="scm-desc">{{ service.description }}</p>
+          <NuxtLink :to="service.href" class="btn-secondary11 mt-4 inline-block"> {{ service.button }}</NuxtLink>
+
         </div>
       </div>
+      
     </div>
 
     <!-- Single CTA -->
@@ -342,22 +345,33 @@ const services = [
     icon: 'ph:globe-hemisphere-west-fill',
     title: 'Website Development',
     description: 'Professional, modern websites built to represent your brand and convert visitors into clients.',
+    button: 'More about Website Development',
+    href: '/categories/website-development',
+
   },
+
   {
     icon: 'ph:chart-bar-fill',
     title: 'Data Mining',
     description: 'We extract, collect, and structure the right data from the right sources so your startup stops guessing and starts making decisions backed by real market intelligence.',
+    button: 'More about Data Mining',
+    href: '/categories/data-mining',
   },
   {
     icon: 'ph:chart-bar-fill',
     title: 'Data Analysis',
     description: 'We turn your raw, messy data into clear visuals and actionable insights so you know exactly what is working, what is not, and where to focus next to grow your business.',
+    button: 'More about Data Analysis',
+    href: '/categories/data-analysis',
   },
   {
     icon: 'ph:brain-fill',
     title: 'Data Science & AI',
-  description: 'We build intelligent machine learning models and AI-powered systems that help your startup predict outcomes, automate decisions, and solve complex business problems before they become expensive mistakes.',
-  },
+    description: 'We build intelligent machine learning models and AI-powered systems that help your startup predict outcomes, automate decisions, and solve complex business problems before they become expensive mistakes.',
+    link: '/categories/data-science-ai',
+    button: 'More about Data Science-AI',
+    href: '/categories/data-science-ai',
+},
 ]
 
 const reasons = [
@@ -1140,6 +1154,20 @@ onUnmounted(() => {
   box-shadow: 0 16px 40px rgba(14,165,233,0.5);
 }
 
+.scm-btn {
+  margin-top: 1.25rem;
+  background: rgba(255,255,255,0.15) !important;
+  color: white !important;
+  border: 1px solid rgba(255,255,255,0.3) !important;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+.scm-btn:hover {
+  background: rgba(255,255,255,0.25) !important;
+  border-color: rgba(255,255,255,0.5) !important;
+  transform: translateX(4px);
+}
+
 /* ── CTA ── */
 .cta-stars { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .cta-star { position: absolute; width: 2px; height: 2px; background: white; border-radius: 50%; animation: twinkle ease-in-out infinite; }
@@ -1161,6 +1189,16 @@ onUnmounted(() => {
 .animate-fade-in-up-delay2 { animation: fadeInUp 0.8s ease 0.6s both; }
 .animate-fade-in-up-delay3 { animation: fadeInUp 0.8s ease 0.8s both; }
 
+
+.btn-secondary11 {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255,255,255,0.4); color: white; font-weight: 600;
+  border-radius: 0.75rem;
+  transition: background 0.2s, border-color 0.2s;
+  text-decoration: none;
+  
+}
 
 /* ── WhatsApp FAB ── */
 .whatsapp-fab {
