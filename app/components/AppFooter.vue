@@ -22,14 +22,18 @@
 
       <!-- Social icons -->
       <div class="flex justify-center gap-4 mb-8">
-        <a href="https://github.com/oldstunnatech" target="_blank" rel="noopener noreferrer" class="social-btn">
+        <!-- <a href="https://github.com/OguntolaPelumi" target="_blank" rel="noopener noreferrer" class="social-btn">
           <Icon name="ph:github-logo-fill" />
-        </a>
+        </a> -->
         <a href="https://www.linkedin.com/in/newheaven-it-solutions-a6b1b2309" target="_blank" rel="noopener noreferrer" class="social-btn">
           <Icon name="ph:linkedin-logo-fill" />
         </a>
         <a href="https://x.com/NewHeavenIT" target="_blank" rel="noopener noreferrer" class="social-btn">
           <Icon name="ph:x-logo-fill" />
+        </a>
+
+        <a href="https://www.instagram.com/newheavenit_solutions?igsh=MW1pcTZrbGQyNWJhdw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <Icon name="ph:instagram-logo-fill" />
         </a>
       </div>
 

@@ -42,8 +42,7 @@
     <!-- Subheading -->
     <p class="hero-sub animate-fade-in-up-delay2">
       From professional websites to data analytics, data mining, and machine
-      learning solutions — we give freelancers and businesses across Nigeria
-      and the world the tools to grow smarter and compete stronger.
+      learning solutions we give freelancers and businesses across the world the tools to grow smarter and compete stronger.
     </p>
 
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 animate-fade-in-up-delay2">
@@ -110,7 +109,7 @@
           </div>
           <div>
             <h3 class="trust-headline-title">Trusted by Founders & Businesses</h3>
-            <p class="trust-headline-sub">Nigeria · Africa · Worldwide</p>
+            <p class="trust-headline-sub">Remote: Worldwide</p>
           </div>
         </div>
 
@@ -148,11 +147,7 @@
             Your growth is the metric we measure ourselves by.
           </p>
           <div class="trust-sig">
-            <div class="trust-sig-avatar">OP</div>
-            <div>
-              <p class="trust-sig-name">Oguntola Pelumi</p>
-              <p class="trust-sig-role">Founder, NewHeaven IT Solutions</p>
-            </div>
+            
           </div>
         </div>
 
@@ -205,7 +200,7 @@
       <span class="services-tag">What We Offer</span>
       <h2 class="services-title">Our Services</h2>
       <p class="services-sub">
-        From professional websites to machine learning models — we cover
+        From professional websites to machine learning models, we cover
         the full spectrum of what your business needs to grow digitally.
       </p>
     </div>
