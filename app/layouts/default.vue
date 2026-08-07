@@ -6,6 +6,7 @@
       <slot />
     </main>
     <AppFooter />
+    <QuoteButton /> 
   </div>
 </template>
 

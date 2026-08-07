@@ -10,6 +10,7 @@ const links = [
   { label: 'About', to: '/about', icon: 'ph:info-fill' },
   // { label: 'Blog', to: '/blog', icon: 'ph:newspaper-fill' },
   { label: 'Contact', to: '/contact', icon: 'ph:envelope-fill' },
+  { label: 'Get a Quote', to: '/get-a-quote', icon: 'ph:calculator-fill' },
 ]
 
 const mobileOpen = ref(false)

@@ -594,6 +594,7 @@ useSeoMeta({
   text-decoration: none; font-weight: 600; font-size: 0.875rem;
   transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .whatsapp-fab:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 8px 32px rgba(37,211,102,0.5); }
 .whatsapp-label { display: block; }
 
